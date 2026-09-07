@@ -70,7 +70,8 @@ export default function FilmStrip() {
               </div>
 
               {/* B&W Image Frame */}
-              <div className="relative w-full h-[240px] md:h-[290px] overflow-hidden bg-black border border-white/10">
+              <div className="relative w-full h-[180px] sm:h-[240px] md:h-[290px] overflow-hidden bg-black border border-white/10">
+
                 <Image
                   src={frame.src}
                   alt={frame.caption}
