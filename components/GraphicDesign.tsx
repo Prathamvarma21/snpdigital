@@ -39,7 +39,7 @@ export default function GraphicDesign() {
     if (!sectionRef.current || !row1Ref.current || !row2Ref.current) return;
 
     // Row 1 moves smoothly LEFT on scroll
-    gsap.to(row1Ref.current, {
+    const anim1 = gsap.to(row1Ref.current, {
       x: '-25%',
       ease: 'none',
       scrollTrigger: {
@@ -51,7 +51,7 @@ export default function GraphicDesign() {
     });
 
     // Row 2 moves smoothly RIGHT on scroll
-    gsap.to(row2Ref.current, {
+    const anim2 = gsap.to(row2Ref.current, {
       x: '25%',
       ease: 'none',
       scrollTrigger: {
@@ -63,7 +63,10 @@ export default function GraphicDesign() {
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach((t) => t.kill());
+      anim1.scrollTrigger?.kill();
+      anim2.scrollTrigger?.kill();
+      anim1.kill();
+      anim2.kill();
     };
   }, []);
 
