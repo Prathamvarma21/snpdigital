@@ -1,0 +1,106 @@
+'use client';
+
+import Image from 'next/image';
+import ScrapbookCard from './ScrapbookCard';
+import Tape from './Tape';
+import { Mail, ExternalLink, Globe } from 'lucide-react';
+
+const endPortraits = [
+  '/images/portraits/hero-black-white.jpg',
+  '/images/portraits/portrait-02.jpg',
+  '/images/portraits/portrait-03.jpg',
+  '/images/portraits/portrait-05.jpg',
+];
+
+export default function EndSection() {
+  return (
+    <ScrapbookCard id="end" variant="cream" rotate="rotate-[-0.2deg]" className="mb-32">
+      
+      <div className="flex flex-col items-center text-center max-w-xl mx-auto py-4">
+        
+        {/* Small Centered Red Film Strip Containing 4 B&W Portraits */}
+        <div className="relative bg-[#8E0E13] p-3 rounded-xs shadow-2xl border border-[#6F090D] mb-8 w-full max-w-md rotate-[1deg]">
+          <Tape className="-top-3 left-1/2 transform -translate-x-1/2" variant="cream" rotate="rotate-[-2deg]" />
+          
+          <div className="flex justify-between items-center text-[8px] font-mono text-white/80 font-bold px-1 mb-2 tracking-widest uppercase">
+            <span>VALENTINA ROSSI</span>
+            <span>• FINIS •</span>
+          </div>
+
+
+          <div className="grid grid-cols-4 gap-2">
+            {endPortraits.map((src, idx) => (
+              <div key={idx} className="relative aspect-[3/4] overflow-hidden bg-black border border-white/10">
+                <Image
+                  src={src}
+                  alt={`End portrait ${idx + 1}`}
+                  fill
+                  sizes="150px"
+                  className="object-cover grayscale contrast-125 hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-between items-center text-[7px] font-mono text-white/60 px-1 mt-1.5">
+            <span>► REEL END 36</span>
+            <span>2026 MILANO</span>
+          </div>
+        </div>
+
+        {/* Red Paper Label: "the end" */}
+        <div className="bg-[#8E0E13] text-[#F3EEE7] px-8 py-2 rounded-xs shadow-md border border-[#6F090D] rotate-[-1deg] mb-6">
+          <h2 className="font-handwriting text-5xl md:text-6xl font-bold tracking-wide">
+            the end
+          </h2>
+        </div>
+
+        {/* Small Handwritten Editorial Note */}
+        <p className="font-handwriting text-2xl md:text-3xl font-bold text-[#8E0E13] max-w-md mb-8 leading-snug">
+          "thanks for scrolling through my little world."
+        </p>
+
+        {/* Social & Contact Links */}
+        <div className="flex flex-wrap justify-center gap-4 text-xs font-mono font-bold tracking-wider">
+          <a
+            href="mailto:valentina.rossi@artjournal.design"
+            data-cursor="GO"
+            className="flex items-center gap-2 bg-[#8E0E13] text-white px-5 py-2.5 rounded-full hover:bg-[#6F090D] transition-colors shadow-md"
+          >
+            <Mail className="w-4 h-4" />
+            <span>EMAIL ME</span>
+          </a>
+
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor="GO"
+            className="flex items-center gap-2 bg-[#F3EEE7] text-[#8E0E13] px-5 py-2.5 rounded-full border border-[#8E0E13] hover:bg-[#8E0E13] hover:text-white transition-colors shadow-sm"
+          >
+            <Globe className="w-4 h-4" />
+            <span>INSTAGRAM</span>
+          </a>
+
+          <a
+            href="https://behance.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor="GO"
+            className="flex items-center gap-2 bg-[#F3EEE7] text-[#8E0E13] px-5 py-2.5 rounded-full border border-[#8E0E13] hover:bg-[#8E0E13] hover:text-white transition-colors shadow-sm"
+          >
+            <ExternalLink className="w-4 h-4" />
+            <span>BEHANCE</span>
+          </a>
+        </div>
+
+        {/* Footer copyright */}
+        <div className="mt-12 text-[10px] font-mono text-[#6F6862] tracking-widest uppercase">
+          © 2026 VALENTINA ROSSI • ALL RIGHTS RESERVED • MILANO, ITALY
+        </div>
+
+      </div>
+
+    </ScrapbookCard>
+  );
+}
