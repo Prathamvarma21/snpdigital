@@ -162,7 +162,7 @@ export default function Skills() {
                     <div className="relative aspect-[3/4] w-full bg-black overflow-hidden border border-black/40">
                       <Image
                         src="/images/portraits/portrait-02.jpg"
-                        alt="Valentina Photo Scrap"
+                        alt="Photo Scrap"
                         fill
                         sizes="200px"
                         className="object-cover grayscale contrast-150"
@@ -269,7 +269,7 @@ export default function Skills() {
                     <div className="relative aspect-[3/4] w-full bg-black overflow-hidden">
                       <Image
                         src="/images/portraits/portrait-04.jpg"
-                        alt="Valentina Photo"
+                        alt="Photo"
                         fill
                         sizes="160px"
                         className="object-cover grayscale contrast-150"

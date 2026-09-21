@@ -27,7 +27,7 @@ export default function About() {
               <div className="relative w-44 h-56 sm:w-48 sm:h-60 overflow-hidden bg-black border border-[#8E0E13]">
                 <Image
                   src="/images/portraits/about-postage.jpg"
-                  alt="Valentina Rossi Postage Stamp Portrait"
+                  alt="Postage Stamp Portrait"
                   fill
                   sizes="240px"
                   className="object-cover grayscale contrast-125 hover:scale-105 transition-transform duration-500"
@@ -37,7 +37,7 @@ export default function About() {
 
               {/* Stamp Caption */}
               <div className="text-center mt-1 text-[8px] font-mono text-[#201C1B] font-bold tracking-wider">
-                VALENTINA ROSSI • 2026
+                CREATIVE STUDIO • 2026
               </div>
             </div>
 
@@ -63,7 +63,7 @@ export default function About() {
 
               "Every design should feel like a piece of personal history — caught somewhere between analog warmth & visual precision."
             </p>
-            <span className="block text-right text-lg text-white/90 font-bold mt-2">— V. Rossi</span>
+            <span className="block text-right text-lg text-white/90 font-bold mt-2">— Creative Director</span>
           </div>
         </div>
 

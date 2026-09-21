@@ -98,11 +98,11 @@ export default function ProjectImage({
                   {title}
                 </h3>
                 <p className="text-xs text-[#6F6862] leading-relaxed">
-                  An original visual composition by Valentina Rossi exploring modern fashion, analog texture, and expressive color storytelling.
+                  An original visual composition exploring modern graphic design, analog texture, and expressive color storytelling.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#D8D8D6] text-xs font-mono text-[#6F6862]">
-                VALENTINA ROSSI ART JOURNAL
+                CREATIVE ART JOURNAL
               </div>
             </div>
           </div>

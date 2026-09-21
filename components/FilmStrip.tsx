@@ -3,12 +3,12 @@
 import Image from 'next/image';
 
 const portraitList = [
-  { src: '/images/portraits/hero-black-white.jpg', id: '01', caption: 'VALENTINA — 01' },
-  { src: '/images/portraits/portrait-02.jpg', id: '02', caption: 'VALENTINA — 02' },
-  { src: '/images/portraits/portrait-03.jpg', id: '03', caption: 'VALENTINA — 03' },
-  { src: '/images/portraits/portrait-04.jpg', id: '04', caption: 'VALENTINA — 04' },
-  { src: '/images/portraits/portrait-05.jpg', id: '05', caption: 'VALENTINA — 05' },
-  { src: '/images/portraits/about-postage.jpg', id: '06', caption: 'VALENTINA — 06' },
+  { src: '/images/portraits/hero-black-white.jpg', id: '01', caption: 'PORTFOLIO — 01' },
+  { src: '/images/portraits/portrait-02.jpg', id: '02', caption: 'PORTFOLIO — 02' },
+  { src: '/images/portraits/portrait-03.jpg', id: '03', caption: 'PORTFOLIO — 03' },
+  { src: '/images/portraits/portrait-04.jpg', id: '04', caption: 'PORTFOLIO — 04' },
+  { src: '/images/portraits/portrait-05.jpg', id: '05', caption: 'PORTFOLIO — 05' },
+  { src: '/images/portraits/about-postage.jpg', id: '06', caption: 'PORTFOLIO — 06' },
 ];
 
 export default function FilmStrip() {
@@ -66,7 +66,7 @@ export default function FilmStrip() {
               <div className="flex justify-between items-center text-[10px] font-mono text-neutral-400 font-bold px-1 mb-2 uppercase tracking-widest">
                 <span>KODAK TRI-X 400</span>
                 <span>• {frame.frameNumber} •</span>
-                <span>VALENTINA ROSSI</span>
+                <span>CREATIVE PORTFOLIO</span>
               </div>
 
               {/* B&W Image Frame */}

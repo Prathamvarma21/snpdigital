@@ -23,7 +23,7 @@ export default function EndSection() {
           <Tape className="-top-3 left-1/2 transform -translate-x-1/2" variant="cream" rotate="rotate-[-2deg]" />
           
           <div className="flex justify-between items-center text-[8px] font-mono text-white/80 font-bold px-1 mb-2 tracking-widest uppercase">
-            <span>VALENTINA ROSSI</span>
+            <span>CREATIVE PORTFOLIO</span>
             <span>• FINIS •</span>
           </div>
 
@@ -63,7 +63,7 @@ export default function EndSection() {
         {/* Social & Contact Links */}
         <div className="flex flex-wrap justify-center gap-4 text-xs font-mono font-bold tracking-wider">
           <a
-            href="mailto:valentina.rossi@artjournal.design"
+            href="mailto:hello@artjournal.design"
             data-cursor="GO"
             className="flex items-center gap-2 bg-[#8E0E13] text-white px-5 py-2.5 rounded-full hover:bg-[#6F090D] transition-colors shadow-md"
           >
@@ -96,7 +96,7 @@ export default function EndSection() {
 
         {/* Footer copyright */}
         <div className="mt-12 text-[10px] font-mono text-[#6F6862] tracking-widest uppercase">
-          © 2026 VALENTINA ROSSI • ALL RIGHTS RESERVED • MILANO, ITALY
+          © 2026 CREATIVE PORTFOLIO • ALL RIGHTS RESERVED • MILANO, ITALY
         </div>
 
       </div>

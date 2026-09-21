@@ -19,9 +19,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'VALENTINA ROSSI — Personal Art Portfolio & Journal',
+  title: 'Creative Art Portfolio & Journal',
   description: 'A visual designer and artist personal scrapbook portfolio presented inside a vintage film reel.',
-  keywords: ['female designer', 'visual artist', 'art direction', 'graphic design', 'film reel portfolio'],
+  keywords: ['visual artist', 'art direction', 'graphic design', 'film reel portfolio'],
 };
 
 export default function RootLayout({

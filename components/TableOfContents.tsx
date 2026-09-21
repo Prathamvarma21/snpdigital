@@ -89,8 +89,8 @@ export default function TableOfContents() {
 
         {/* Bottom Index Footer */}
         <div className="mt-8 pt-4 flex justify-between items-center text-[10px] font-mono text-white/60 uppercase tracking-widest">
-          <span>VALENTINA ROSSI PORTFOLIO</span>
-          <span>PAGE 05 OF 08</span>
+          <span>INDEX REEL 2026</span>
+          <span>ART & DESIGN PORTFOLIO</span>
         </div>
 
       </div>

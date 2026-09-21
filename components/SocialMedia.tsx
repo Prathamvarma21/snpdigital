@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import ScrapbookCard from './ScrapbookCard';
-import Tape from './Tape';
 import { Heart, MessageCircle, Send, Bookmark } from 'lucide-react';
 
 const socialCampaigns = [
@@ -10,36 +9,36 @@ const socialCampaigns = [
     id: 1,
     brand: '@maison.noir.couture',
     title: 'Luxury Fashion Campaign',
-    image: '/images/social/social-01.jpg',
+    image: '/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png',
     likes: '14.2k',
-    caption: 'Fall Editorial drop — High-contrast monochrome & velvet aesthetics.',
+    caption: 'ÉCLIPSE Couture Drop — High-contrast monochrome & velvet aesthetics.',
     rotate: 'rotate-[-6deg]',
   },
   {
     id: 2,
     brand: '@botanique.beauty',
     title: 'Beauty & Lifestyle Reel',
-    image: '/images/social/social-02.jpg',
+    image: '/images/decorative/Screenshot 2026-09-09 at 3.57.14 PM.png',
     likes: '9.8k',
-    caption: 'Avant-garde watercolor fashion study for summer launch.',
+    caption: 'Avant-garde editorial magazine study for summer launch.',
     rotate: 'rotate-[4deg]',
   },
   {
     id: 3,
-    brand: '@valentina.studio',
+    brand: '@creative.studio',
     title: 'Creative Art Campaign',
-    image: '/images/social/social-03.jpg',
+    image: '/images/decorative/Screenshot 2026-09-09 at 3.57.25 PM.png',
     likes: '22.5k',
-    caption: 'Tropical Echoes Vol. I — Paper collage & botanical study.',
+    caption: 'Minimalist Typography Series — Paper collage & botanical study.',
     rotate: 'rotate-[-3deg]',
   },
   {
     id: 4,
     brand: '@harmony.type.mag',
     title: 'Product Branding Feed',
-    image: '/images/social/social-04.jpg',
+    image: '/images/decorative/Screenshot 2026-09-09 at 3.58.40 PM.png',
     likes: '18.1k',
-    caption: 'Issue No. 42 Creative Harmony print launch preview.',
+    caption: 'Issue No. 42 Visual Composition print launch preview.',
     rotate: 'rotate-[5deg]',
   },
 ];

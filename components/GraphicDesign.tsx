@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 import ScrapbookCard from './ScrapbookCard';
-import Tape from './Tape';
 import ProjectImage from './ProjectImage';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -12,22 +10,29 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+const decorativeProjects = [
+  { id: 'dec-01', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png', title: 'ÉCLIPSE Design System', category: 'BRANDING & IDENTITY', year: '2026' },
+  { id: 'dec-02', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.14 PM.png', title: 'Editorial Spread Layout', category: 'EDITORIAL DESIGN', year: '2026' },
+  { id: 'dec-03', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.25 PM.png', title: 'Minimalist Poster Series', category: 'TYPOGRAPHY POSTER', year: '2026' },
+  { id: 'dec-04', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.40 PM.png', title: 'Visual Composition Vol. 1', category: 'GRAPHIC ART', year: '2026' },
+  { id: 'dec-05', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.48 PM.png', title: 'Abstract Graphic Studies', category: 'EXPERIMENTAL DESIGN', year: '2026' },
+  { id: 'dec-06', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.57 PM.png', title: 'Monochrome Layout Art', category: 'EDITORIAL SPREAD', year: '2026' },
+  { id: 'dec-07', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.09 PM.png', title: 'Creative Brand Framework', category: 'BRAND IDENTITY', year: '2026' },
+  { id: 'dec-08', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.30 PM.png', title: 'Geometric Poster Concept', category: 'PRINT & POSTER', year: '2026' },
+  { id: 'dec-09', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.50 PM.png', title: 'Vibrant Visual Experiment', category: 'DIGITAL ART', year: '2026' },
+  { id: 'dec-10', src: '/images/decorative/Screenshot 2026-09-09 at 4.00.03 PM.png', title: 'Modern Fashion Graphics', category: 'FASHION POSTER', year: '2026' },
+];
+
 const row1Projects = [
+  ...decorativeProjects.slice(0, 5),
   { id: '01', src: '/images/graphic-design/graphic-01.jpg', title: 'ÉCLIPSE Couture', category: 'FASHION POSTER', year: '2026' },
   { id: '02', src: '/images/graphic-design/graphic-02.jpg', title: 'Mode Expression Spread', category: 'MAGAZINE SPREAD', year: '2026' },
-  { id: '03', src: '/images/graphic-design/graphic-03.jpg', title: 'Creative Harmony Type', category: 'TYPOGRAPHY POSTER', year: '2025' },
-  { id: '04', src: '/images/graphic-design/graphic-04.jpg', title: 'Botanical Echo Identity', category: 'BRAND IDENTITY', year: '2025' },
-  { id: '05', src: '/images/artwork/art-01.jpg', title: 'Chromatic Portrait', category: 'DIGITAL PAINTING', year: '2026' },
-  { id: '06', src: '/images/artwork/art-02.jpg', title: 'Avant-Garde Watercolor', category: 'FASHION ART', year: '2026' },
 ];
 
 const row2Projects = [
-  { id: '07', src: '/images/graphic-design/graphic-05.jpg', title: 'Milan Art Fest 2026', category: 'EVENT POSTER', year: '2026' },
-  { id: '08', src: '/images/graphic-design/graphic-06.jpg', title: 'Surreal Vinyl Album', category: 'ALBUM COVER', year: '2024' },
-  { id: '09', src: '/images/graphic-design/graphic-07.jpg', title: 'Magenta Neon Experiment', category: 'EXPERIMENTAL COMPOSITION', year: '2026' },
-  { id: '10', src: '/images/artwork/art-03.jpg', title: 'Surreal Geometry', category: 'ABSTRACT ART', year: '2025' },
-  { id: '11', src: '/images/artwork/art-04.jpg', title: 'Tropical Echoes', category: 'BOTANICAL COLLAGE', year: '2025' },
-  { id: '12', src: '/images/artwork/art-05.jpg', title: 'Neon Gel Vignette', category: 'FINE ART PHOTO', year: '2026' },
+  ...decorativeProjects.slice(5, 10),
+  { id: '03', src: '/images/graphic-design/graphic-03.jpg', title: 'Creative Harmony Type', category: 'TYPOGRAPHY POSTER', year: '2025' },
+  { id: '04', src: '/images/graphic-design/graphic-04.jpg', title: 'Botanical Echo Identity', category: 'BRAND IDENTITY', year: '2025' },
 ];
 
 export default function GraphicDesign() {
@@ -40,7 +45,7 @@ export default function GraphicDesign() {
 
     // Row 1 moves smoothly LEFT on scroll
     const anim1 = gsap.to(row1Ref.current, {
-      x: '-25%',
+      x: '-30%',
       ease: 'none',
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -52,7 +57,7 @@ export default function GraphicDesign() {
 
     // Row 2 moves smoothly RIGHT on scroll
     const anim2 = gsap.to(row2Ref.current, {
-      x: '25%',
+      x: '30%',
       ease: 'none',
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -74,7 +79,7 @@ export default function GraphicDesign() {
     <ScrapbookCard id="design" variant="red" rotate="rotate-0" className="overflow-hidden py-12 md:py-16">
       <div ref={sectionRef} className="relative w-full flex flex-col items-center">
         
-        {/* 1. TOP HEADER & EDITORIAL TEXT (Exact Match for Screenshot Image 1) */}
+        {/* 1. TOP HEADER & EDITORIAL TEXT */}
         <div className="text-center max-w-3xl mx-auto mb-12 px-4 z-20">
           <h2 className="font-handwriting text-6xl sm:text-8xl md:text-9xl font-bold text-white tracking-wide mb-6 drop-shadow-md select-none">
             graphic design
@@ -85,7 +90,7 @@ export default function GraphicDesign() {
           </p>
         </div>
 
-        {/* 2. DOUBLE-ROW SMOOTH HORIZONTAL SLIDING IMAGE STRIPS (Exact Match for Screenshot Image 2) */}
+        {/* 2. DOUBLE-ROW SMOOTH HORIZONTAL SLIDING IMAGE STRIPS */}
         <div className="w-full flex flex-col gap-6 md:gap-8 my-6 overflow-hidden z-10">
           
           {/* ROW 1: SLIDES SMOOTHLY TO THE LEFT ON SCROLL */}
@@ -95,7 +100,7 @@ export default function GraphicDesign() {
             style={{ transform: 'translateX(0%)' }}
           >
             {row1Projects.map((item) => (
-              <div key={item.id} className="w-[200px] sm:w-[260px] md:w-[300px] shrink-0">
+              <div key={item.id} className="w-[220px] sm:w-[280px] md:w-[320px] shrink-0">
                 <ProjectImage
                   src={item.src}
                   title={item.title}
@@ -115,7 +120,7 @@ export default function GraphicDesign() {
             style={{ transform: 'translateX(-35%)' }}
           >
             {row2Projects.map((item) => (
-              <div key={item.id} className="w-[200px] sm:w-[260px] md:w-[300px] shrink-0">
+              <div key={item.id} className="w-[220px] sm:w-[280px] md:w-[320px] shrink-0">
                 <ProjectImage
                   src={item.src}
                   title={item.title}
@@ -131,8 +136,34 @@ export default function GraphicDesign() {
         </div>
 
         {/* Scroll Instruction Hint */}
-        <div className="mt-8 text-center text-xs font-mono text-white/70 tracking-widest uppercase z-20">
-          ↔ KEEP SCROLLING — IMAGE ROWS SLIDE IN OPPOSITE DIRECTIONS Smoothly
+        <div className="mt-6 text-center text-xs font-mono text-white/70 tracking-widest uppercase z-20">
+          ↔ KEEP SCROLLING — IMAGE ROWS SLIDE IN OPPOSITE DIRECTIONS
+        </div>
+
+        {/* 3. DECORATIVE DESIGN GALLERY GRID (ALL 10 DESIGNS) */}
+        <div className="w-full max-w-6xl mx-auto mt-16 px-4 z-20">
+          <div className="flex flex-col sm:flex-row items-center justify-between border-b border-white/20 pb-4 mb-8 text-white">
+            <h3 className="font-handwriting text-3xl sm:text-4xl font-bold tracking-wide">
+              decorative design gallery
+            </h3>
+            <span className="text-xs font-mono text-white/80 uppercase tracking-widest mt-2 sm:mt-0">
+              10 SELECTED WORKS • CLICK TO ENLARGE
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {decorativeProjects.map((item, idx) => (
+              <ProjectImage
+                key={item.id}
+                src={item.src}
+                title={item.title}
+                category={item.category}
+                year={item.year}
+                aspect="aspect-[3/4]"
+                rotation={idx % 2 === 0 ? 'rotate-[-1deg]' : 'rotate-[1deg]'}
+              />
+            ))}
+          </div>
         </div>
 
       </div>

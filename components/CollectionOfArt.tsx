@@ -3,15 +3,18 @@
 import Image from 'next/image';
 import ScrapbookCard from './ScrapbookCard';
 import ProjectImage from './ProjectImage';
-import Tape from './Tape';
 
 const artworks = [
-  { src: '/images/artwork/art-01.jpg', title: 'Chromatic Portrait No. 1', year: '2026', category: 'DIGITAL PAINTING' },
-  { src: '/images/artwork/art-02.jpg', title: 'Avant-Garde Couture', year: '2026', category: 'FASHION ILLUSTRATION' },
-  { src: '/images/artwork/art-03.jpg', title: 'Surreal Geometry', year: '2025', category: 'ABSTRACT ART' },
-  { src: '/images/artwork/art-04.jpg', title: 'Tropical Echoes Vol. I', year: '2025', category: 'BOTANICAL COLLAGE' },
-  { src: '/images/artwork/art-05.jpg', title: 'Neon Gel Vignettes', year: '2026', category: 'FINE ART PHOTO' },
-  { src: '/images/artwork/art-06.jpg', title: 'Creative Harmony', year: '2024', category: 'TYPOGRAPHY POSTER' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png', title: 'ÉCLIPSE Design System', year: '2026', category: 'BRANDING & IDENTITY' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.57.14 PM.png', title: 'Editorial Spread Layout', year: '2026', category: 'EDITORIAL DESIGN' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.57.25 PM.png', title: 'Minimalist Poster Series', year: '2026', category: 'TYPOGRAPHY POSTER' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.58.40 PM.png', title: 'Visual Composition Vol. 1', year: '2026', category: 'GRAPHIC ART' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.58.48 PM.png', title: 'Abstract Graphic Studies', year: '2026', category: 'EXPERIMENTAL DESIGN' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.58.57 PM.png', title: 'Monochrome Layout Art', year: '2026', category: 'EDITORIAL SPREAD' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.59.09 PM.png', title: 'Creative Brand Framework', year: '2026', category: 'BRAND IDENTITY' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.59.30 PM.png', title: 'Geometric Poster Concept', year: '2026', category: 'PRINT & POSTER' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 3.59.50 PM.png', title: 'Vibrant Visual Experiment', year: '2026', category: 'DIGITAL ART' },
+  { src: '/images/decorative/Screenshot 2026-09-09 at 4.00.03 PM.png', title: 'Modern Fashion Graphics', year: '2026', category: 'FASHION POSTER' },
 ];
 
 export default function CollectionOfArt() {
@@ -24,7 +27,6 @@ export default function CollectionOfArt() {
           collection of art
         </h2>
       </div>
-
 
       {/* Top Feature: Vintage Digital Camera LCD & Editorial Text */}
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mb-12 bg-black/20 p-6 md:p-8 rounded-xs border border-white/15">
@@ -57,7 +59,7 @@ export default function CollectionOfArt() {
             {/* Camera Screen Displaying Artwork */}
             <div className="relative w-full h-[220px] sm:h-[240px] bg-black rounded-md overflow-hidden border-4 border-neutral-800 shadow-inner">
               <Image
-                src="/images/artwork/art-01.jpg"
+                src="/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png"
                 alt="Artwork inside vintage camera LCD"
                 fill
                 sizes="400px"
@@ -97,7 +99,7 @@ export default function CollectionOfArt() {
           </p>
           <div className="pt-4 flex items-center gap-4">
             <span className="bg-white/15 text-white text-xs font-mono px-3 py-1.5 rounded-full border border-white/20">
-              6 PHYSICAL PRINTS
+              10 PHYSICAL PRINTS
             </span>
             <span className="text-xs font-handwriting text-white/80 text-lg">
               click any print to enlarge ↑
@@ -107,14 +109,14 @@ export default function CollectionOfArt() {
 
       </div>
 
-      {/* Bottom Horizontal Row of 6 Physical Artwork Prints */}
+      {/* Bottom Horizontal Row of Physical Artwork Prints */}
       <div>
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-handwriting text-2xl font-bold text-white">
             physical prints archive
           </h3>
           <span className="text-xs font-mono text-white/60">
-            01 — 06 ARTWORKS
+            01 — 10 ARTWORKS
           </span>
         </div>
 

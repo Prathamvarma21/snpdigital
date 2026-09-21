@@ -66,7 +66,7 @@ export default function Hero() {
               <div key={i} className="relative aspect-[3/4] overflow-hidden bg-black border border-white/20 shadow-inner">
                 <Image
                   src={src}
-                  alt={`Valentina Rossi ${i + 1}`}
+                  alt={`Portrait ${i + 1}`}
                   fill
                   sizes="200px"
                   className="object-cover grayscale contrast-150 brightness-95 hover:scale-105 transition-transform duration-500"
@@ -84,7 +84,7 @@ export default function Hero() {
               ))}
             </div>
             <span className="text-[7px] font-mono text-white/70">
-              VALENTINA ROSSI
+              35MM FILM REEL
             </span>
             <div className="flex gap-1">
               {Array.from({ length: 12 }).map((_, i) => (
@@ -94,11 +94,11 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Taped Red Label with Designer Name */}
+        {/* Taped Red Label */}
         <div className="flex flex-col items-center justify-center text-center">
           <div className="relative bg-[#8E0E13] text-[#F3EEE7] px-8 py-2 rounded-xs shadow-md rotate-[-1deg] border border-[#6F090D] mb-4">
             <h2 className="font-handwriting text-3xl md:text-5xl font-bold tracking-wide">
-              valentina rossi
+              art & design journal
             </h2>
           </div>
 

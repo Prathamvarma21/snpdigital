@@ -42,7 +42,7 @@ export default function NavPill() {
   return (
     <div className="fixed top-6 right-6 z-40 hidden md:flex items-center gap-1.5 bg-[#F3EEE7]/90 backdrop-blur-md px-4 py-2 rounded-full border border-[#8E0E13]/20 shadow-md">
       <span className="font-handwriting text-sm font-bold text-[#8E0E13] mr-2 tracking-widest uppercase">
-        Valentina R.
+        Portfolio
       </span>
       <div className="h-3 w-[1px] bg-[#8E0E13]/30 mr-1" />
       {navItems.map((item) => {
