@@ -6,6 +6,7 @@ import FilmStrip from '@/components/FilmStrip';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
+import BannersSection from '@/components/BannersSection';
 import CollectionOfArt from '@/components/CollectionOfArt';
 import ReelsShowcase from '@/components/ReelsShowcase';
 
@@ -74,7 +75,7 @@ export default function Home() {
 
   return (
     <SmoothScroll>
-      <main className="relative min-h-screen bg-[#D9D9D7] overflow-hidden" ref={containerRef}>
+      <main className="relative min-h-screen bg-[#D9D9D7] bg-[url('/images/paper-bg.jpg')] bg-cover bg-center bg-fixed overflow-hidden" ref={containerRef}>
         
         {/* 1. ONE CONTINUOUS VERTICAL VINTAGE RED FILM STRIP BEHIND EVERYTHING */}
         <div ref={filmBgRef} className="absolute inset-0 w-full h-[115%] pointer-events-none z-0">
@@ -94,6 +95,9 @@ export default function Home() {
 
           {/* 03 — SKILLS + EXPERIENCE */}
           <Skills />
+
+          {/* BANNERS SHOWCASE */}
+          <BannersSection />
 
           {/* 04 — COLLECTION OF ART */}
           <CollectionOfArt />

@@ -54,11 +54,11 @@ const ReelVideo = ({ src }: { src: string }) => {
 };
 
 const reels = [
-  { src: '/images/reels/IMG_5150.mp4', title: 'Reel 01' },
-  { src: '/images/reels/IMG_5151.mp4', title: 'Reel 02' },
-  { src: '/images/reels/IMG_5152.mp4', title: 'Reel 03' },
-  { src: '/images/reels/IMG_5153.mp4', title: 'Reel 04' },
-  { src: '/images/reels/IMG_5156.mov', title: 'Reel 05' },
+  { src: '/images/reels/IMG_5151.mp4', title: 'Reel' },
+  { src: '/images/reels/IMG_5150.mp4', title: 'Reel' },
+  { src: '/images/reels/IMG_5152.mp4', title: 'Reel' },
+  { src: '/images/reels/IMG_5153.mp4', title: 'Reel' },
+  { src: '/images/reels/IMG_5156.mov', title: 'Reel' },
 ];
 
 export default function ReelsShowcase() {

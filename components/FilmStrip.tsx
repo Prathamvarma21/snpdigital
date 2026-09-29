@@ -3,12 +3,12 @@
 import Image from 'next/image';
 
 const portraitList = [
-  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-1.jpg', id: '01', caption: 'LOOK — 01' },
-  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-2.jpg', id: '02', caption: 'LOOK — 02' },
-  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-3.jpg', id: '03', caption: 'LOOK — 03' },
-  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-4.jpg', id: '04', caption: 'LOOK — 04' },
-  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-5.jpg', id: '05', caption: 'LOOK — 05' },
-  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-6.jpg', id: '06', caption: 'LOOK — 06' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-1.jpg', id: '01', caption: 'LOOK — 01' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-2.jpg', id: '02', caption: 'LOOK — 02' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-3.jpg', id: '03', caption: 'LOOK — 03' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-4.jpg', id: '04', caption: 'LOOK — 04' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-5.jpg', id: '05', caption: 'LOOK — 05' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-6.jpg', id: '06', caption: 'LOOK — 06' },
 ];
 
 export default function FilmStrip() {
