@@ -5,19 +5,21 @@ import ScrapbookCard from './ScrapbookCard';
 import Tape from './Tape';
 
 const tocItems = [
-  { num: '01', title: 'about me', desc: 'biography & background story', id: 'about' },
+  { num: '01', title: 'about us', desc: 'biography & background story', id: 'about' },
   { num: '02', title: 'skills', desc: 'abilities & software tools', id: 'skills' },
   { num: '03', title: 'experience', desc: 'creative trajectory timeline', id: 'skills' },
   { num: '04', title: 'collection of art', desc: 'vibrant visual artwork gallery', id: 'art' },
   { num: '05', title: 'graphic design', desc: 'editorial poster & branding archives', id: 'design' },
-  { num: '06', title: 'social media', desc: 'campaign mockups & digital feeds', id: 'social' },
+  { num: '06', title: 'reels showcase', desc: 'video campaigns & motion', id: 'reels' },
+  { num: '07', title: 'influencer collabs', desc: 'viral campaigns & creator partnerships', id: 'influencers' },
+  { num: '08', title: 'website', desc: 'digital experiences & mockups', id: 'website' },
 ];
 
 const miniThumbs = [
-  '/images/artwork/art-01.jpg',
-  '/images/artwork/art-02.jpg',
-  '/images/graphic-design/graphic-01.jpg',
-  '/images/artwork/art-04.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./1.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./2.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./4.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./3.jpg',
 ];
 
 export default function TableOfContents() {
@@ -56,7 +58,7 @@ export default function TableOfContents() {
             </h2>
           </div>
           <p className="text-xs font-mono text-white/80 max-w-xs leading-relaxed">
-            A structured roadmap through my personal visual journal, art collection, graphic design editorials, and social media campaigns.
+            A structured roadmap through our visual journal, art collection, graphic design editorials, and social media campaigns.
           </p>
         </div>
 
@@ -65,7 +67,13 @@ export default function TableOfContents() {
           {tocItems.map((item, idx) => (
             <div
               key={idx}
-              onClick={() => scrollTo(item.id)}
+              onClick={() => {
+                if (item.id === 'website') {
+                  window.location.href = '/website';
+                } else {
+                  scrollTo(item.id);
+                }
+              }}
               data-cursor="GO"
               className="group cursor-pointer flex items-baseline justify-between p-3 rounded-xs hover:bg-white/10 transition-colors border-b border-white/10"
             >

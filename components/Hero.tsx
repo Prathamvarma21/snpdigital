@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 import Tape from './Tape';
 
 const miniPortraits = [
-  '/images/portraits/hero-black-white.jpg',
-  '/images/portraits/portrait-02.jpg',
-  '/images/portraits/portrait-03.jpg',
-  '/images/portraits/portrait-04.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./2.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./1.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./3.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./4.jpg',
 ];
 
 export default function Hero() {
@@ -63,15 +63,15 @@ export default function Hero() {
 
           <div className="grid grid-cols-4 gap-2 md:gap-3">
             {miniPortraits.map((src, i) => (
-              <div key={i} className="relative aspect-[3/4] overflow-hidden bg-black border border-white/20 shadow-inner">
+              <div key={i} className="relative aspect-[3/4] overflow-hidden border border-white/20">
                 <Image
                   src={src}
                   alt={`Portrait ${i + 1}`}
                   fill
                   sizes="200px"
-                  className="object-cover grayscale contrast-150 brightness-95 hover:scale-105 transition-transform duration-500"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/10 mix-blend-overlay pointer-events-none" />
+
               </div>
             ))}
           </div>

@@ -2,17 +2,22 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter, usePathname } from 'next/navigation';
 
 const navItems = [
   { id: 'about', label: 'ABOUT' },
   { id: 'skills', label: 'SKILLS' },
   { id: 'art', label: 'ART' },
   { id: 'design', label: 'DESIGN' },
-  { id: 'social', label: 'SOCIAL' },
+  { id: 'reels', label: 'REELS' },
+  { id: 'influencers', label: 'COLLABS' },
+  { id: 'website', label: 'WEBSITE' },
 ];
 
 export default function NavPill() {
   const [activeSection, setActiveSection] = useState('hero');
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,16 +31,30 @@ export default function NavPill() {
           break;
         }
       }
+      
+      if (pathname === '/website') {
+        setActiveSection('website');
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+  const handleNavClick = (id: string) => {
+    if (id === 'website') {
+      router.push('/website');
+    } else {
+      if (pathname !== '/') {
+        router.push('/');
+        setTimeout(() => {
+          const el = document.getElementById(id);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+      } else {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -50,7 +69,7 @@ export default function NavPill() {
         return (
           <button
             key={item.id}
-            onClick={() => scrollTo(item.id)}
+            onClick={() => handleNavClick(item.id)}
             data-cursor="GO"
             className={`px-2.5 py-1 text-xs tracking-wider transition-all duration-300 font-sans relative ${
               isActive ? 'text-[#8E0E13] font-bold' : 'text-[#6F6862] hover:text-[#201C1B]'

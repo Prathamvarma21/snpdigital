@@ -5,16 +5,16 @@ import ScrapbookCard from './ScrapbookCard';
 import ProjectImage from './ProjectImage';
 
 const artworks = [
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png', title: 'ÉCLIPSE Design System', year: '2026', category: 'BRANDING & IDENTITY' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.57.14 PM.png', title: 'Editorial Spread Layout', year: '2026', category: 'EDITORIAL DESIGN' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.57.25 PM.png', title: 'Minimalist Poster Series', year: '2026', category: 'TYPOGRAPHY POSTER' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.58.40 PM.png', title: 'Visual Composition Vol. 1', year: '2026', category: 'GRAPHIC ART' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.58.48 PM.png', title: 'Abstract Graphic Studies', year: '2026', category: 'EXPERIMENTAL DESIGN' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.58.57 PM.png', title: 'Monochrome Layout Art', year: '2026', category: 'EDITORIAL SPREAD' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.59.09 PM.png', title: 'Creative Brand Framework', year: '2026', category: 'BRAND IDENTITY' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.59.30 PM.png', title: 'Geometric Poster Concept', year: '2026', category: 'PRINT & POSTER' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 3.59.50 PM.png', title: 'Vibrant Visual Experiment', year: '2026', category: 'DIGITAL ART' },
-  { src: '/images/decorative/Screenshot 2026-09-09 at 4.00.03 PM.png', title: 'Modern Fashion Graphics', year: '2026', category: 'FASHION POSTER' },
+  { src: '/images/STORIES BEHAD/1.jpg', title: 'Story One', year: '2026', category: 'PHOTOGRAPHY' },
+  { src: '/images/STORIES BEHAD/2.jpg', title: 'Story Two', year: '2026', category: 'EDITORIAL' },
+  { src: '/images/STORIES BEHAD/3.jpg', title: 'Story Three', year: '2026', category: 'ART DIRECTION' },
+  { src: '/images/STORIES BEHAD/4.jpg', title: 'Story Four', year: '2026', category: 'PORTRAIT' },
+  { src: '/images/STORIES BEHAD/5.jpg', title: 'Story Five', year: '2026', category: 'VISUAL ARTS' },
+  { src: '/images/STORIES BEHAD/6.jpg', title: 'Story Six', year: '2026', category: 'CREATIVE' },
+  { src: '/images/STORIES BEHAD/7.jpg', title: 'Story Seven', year: '2026', category: 'LIFESTYLE' },
+  { src: '/images/STORIES BEHAD/8.jpg', title: 'Story Eight', year: '2026', category: 'MONOCHROME' },
+  { src: '/images/CREATIVE/1.jpg', title: 'Creative Session I', year: '2026', category: 'ART' },
+  { src: '/images/CREATIVE/2.jpg', title: 'Creative Session II', year: '2026', category: 'ART' },
 ];
 
 export default function CollectionOfArt() {
@@ -59,7 +59,7 @@ export default function CollectionOfArt() {
             {/* Camera Screen Displaying Artwork */}
             <div className="relative w-full h-[220px] sm:h-[240px] bg-black rounded-md overflow-hidden border-4 border-neutral-800 shadow-inner">
               <Image
-                src="/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png"
+                src="/images/STORIES BEHAD/1.jpg"
                 alt="Artwork inside vintage camera LCD"
                 fill
                 sizes="400px"
@@ -95,7 +95,7 @@ export default function CollectionOfArt() {
             "A visual exploration of color, emotion, and identity."
           </h3>
           <p className="text-sm md:text-base text-white/90 leading-relaxed font-sans font-light">
-            An ongoing gallery of visual stories, color experiments, digital portraiture, and fine art photography. Each artwork represents an unfiltered glimpse into my creative thought process — created without client parameters, driven purely by intuition and artistic curiosity.
+            An ongoing gallery of visual stories, color experiments, digital portraiture, and fine art photography. Each artwork represents an unfiltered glimpse into our creative thought process — created without client parameters, driven purely by intuition and artistic curiosity.
           </p>
           <div className="pt-4 flex items-center gap-4">
             <span className="bg-white/15 text-white text-xs font-mono px-3 py-1.5 rounded-full border border-white/20">

@@ -6,10 +6,10 @@ import Tape from './Tape';
 import { Mail, ExternalLink, Globe } from 'lucide-react';
 
 const endPortraits = [
-  '/images/portraits/hero-black-white.jpg',
-  '/images/portraits/portrait-02.jpg',
-  '/images/portraits/portrait-03.jpg',
-  '/images/portraits/portrait-05.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./1.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./2.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./3.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./4.jpg',
 ];
 
 export default function EndSection() {
@@ -30,13 +30,13 @@ export default function EndSection() {
 
           <div className="grid grid-cols-4 gap-2">
             {endPortraits.map((src, idx) => (
-              <div key={idx} className="relative aspect-[3/4] overflow-hidden bg-black border border-white/10">
+              <div key={idx} className="relative aspect-[3/4] overflow-hidden border border-white/10">
                 <Image
                   src={src}
                   alt={`End portrait ${idx + 1}`}
                   fill
                   sizes="150px"
-                  className="object-cover grayscale contrast-125 hover:scale-105 transition-transform duration-300"
+                  className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}
@@ -57,42 +57,10 @@ export default function EndSection() {
 
         {/* Small Handwritten Editorial Note */}
         <p className="font-handwriting text-2xl md:text-3xl font-bold text-[#8E0E13] max-w-md mb-8 leading-snug">
-          "thanks for scrolling through my little world."
+          "thanks for scrolling through our little world."
         </p>
 
-        {/* Social & Contact Links */}
-        <div className="flex flex-wrap justify-center gap-4 text-xs font-mono font-bold tracking-wider">
-          <a
-            href="mailto:hello@artjournal.design"
-            data-cursor="GO"
-            className="flex items-center gap-2 bg-[#8E0E13] text-white px-5 py-2.5 rounded-full hover:bg-[#6F090D] transition-colors shadow-md"
-          >
-            <Mail className="w-4 h-4" />
-            <span>EMAIL ME</span>
-          </a>
 
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-cursor="GO"
-            className="flex items-center gap-2 bg-[#F3EEE7] text-[#8E0E13] px-5 py-2.5 rounded-full border border-[#8E0E13] hover:bg-[#8E0E13] hover:text-white transition-colors shadow-sm"
-          >
-            <Globe className="w-4 h-4" />
-            <span>INSTAGRAM</span>
-          </a>
-
-          <a
-            href="https://behance.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-cursor="GO"
-            className="flex items-center gap-2 bg-[#F3EEE7] text-[#8E0E13] px-5 py-2.5 rounded-full border border-[#8E0E13] hover:bg-[#8E0E13] hover:text-white transition-colors shadow-sm"
-          >
-            <ExternalLink className="w-4 h-4" />
-            <span>BEHANCE</span>
-          </a>
-        </div>
 
         {/* Footer copyright */}
         <div className="mt-12 text-[10px] font-mono text-[#6F6862] tracking-widest uppercase">

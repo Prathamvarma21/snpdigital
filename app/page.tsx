@@ -7,9 +7,10 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import CollectionOfArt from '@/components/CollectionOfArt';
+import ReelsShowcase from '@/components/ReelsShowcase';
 import TableOfContents from '@/components/TableOfContents';
 import GraphicDesign from '@/components/GraphicDesign';
-import SocialMedia from '@/components/SocialMedia';
+import InfluencerCollabs from '@/components/InfluencerCollabs';
 import EndSection from '@/components/EndSection';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -97,14 +98,17 @@ export default function Home() {
           {/* 04 — COLLECTION OF ART */}
           <CollectionOfArt />
 
+          {/* REELS SHOWCASE */}
+          <ReelsShowcase />
+
           {/* 05 — TABLE OF CONTENTS */}
           <TableOfContents />
 
           {/* 06 — GRAPHIC DESIGN */}
           <GraphicDesign />
 
-          {/* 07 — SOCIAL MEDIA */}
-          <SocialMedia />
+          {/* 07 — INFLUENCER COLLABS */}
+          <InfluencerCollabs />
 
           {/* 08 — THE END */}
           <EndSection />

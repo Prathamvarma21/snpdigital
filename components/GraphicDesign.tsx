@@ -12,27 +12,27 @@ if (typeof window !== 'undefined') {
 
 const decorativeProjects = [
   { id: 'dec-01', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png', title: 'ÉCLIPSE Design System', category: 'BRANDING & IDENTITY', year: '2026' },
-  { id: 'dec-02', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.14 PM.png', title: 'Editorial Spread Layout', category: 'EDITORIAL DESIGN', year: '2026' },
+  { id: 'dec-02', src: '/images/STORIES BEHAD/2.jpg', title: 'Editorial Spread Layout', category: 'EDITORIAL DESIGN', year: '2026' },
   { id: 'dec-03', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.25 PM.png', title: 'Minimalist Poster Series', category: 'TYPOGRAPHY POSTER', year: '2026' },
-  { id: 'dec-04', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.40 PM.png', title: 'Visual Composition Vol. 1', category: 'GRAPHIC ART', year: '2026' },
+  { id: 'dec-04', src: '/images/STORIES BEHAD/4.jpg', title: 'Visual Composition Vol. 1', category: 'GRAPHIC ART', year: '2026' },
   { id: 'dec-05', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.48 PM.png', title: 'Abstract Graphic Studies', category: 'EXPERIMENTAL DESIGN', year: '2026' },
-  { id: 'dec-06', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.57 PM.png', title: 'Monochrome Layout Art', category: 'EDITORIAL SPREAD', year: '2026' },
+  { id: 'dec-06', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./2.jpg', title: 'Monochrome Layout Art', category: 'EDITORIAL SPREAD', year: '2026' },
   { id: 'dec-07', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.09 PM.png', title: 'Creative Brand Framework', category: 'BRAND IDENTITY', year: '2026' },
-  { id: 'dec-08', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.30 PM.png', title: 'Geometric Poster Concept', category: 'PRINT & POSTER', year: '2026' },
+  { id: 'dec-08', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./4.jpg', title: 'Geometric Poster Concept', category: 'PRINT & POSTER', year: '2026' },
   { id: 'dec-09', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.50 PM.png', title: 'Vibrant Visual Experiment', category: 'DIGITAL ART', year: '2026' },
-  { id: 'dec-10', src: '/images/decorative/Screenshot 2026-09-09 at 4.00.03 PM.png', title: 'Modern Fashion Graphics', category: 'FASHION POSTER', year: '2026' },
+  { id: 'dec-10', src: '/images/CREATIVE/2.jpg', title: 'Modern Fashion Graphics', category: 'FASHION POSTER', year: '2026' },
 ];
 
 const row1Projects = [
   ...decorativeProjects.slice(0, 5),
-  { id: '01', src: '/images/graphic-design/graphic-01.jpg', title: 'ÉCLIPSE Couture', category: 'FASHION POSTER', year: '2026' },
-  { id: '02', src: '/images/graphic-design/graphic-02.jpg', title: 'Mode Expression Spread', category: 'MAGAZINE SPREAD', year: '2026' },
+  { id: '01', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./1.jpg', title: 'Unfolding Motif 01', category: 'FASHION POSTER', year: '2026' },
+  { id: '02', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./2.jpg', title: 'Unfolding Motif 02', category: 'MAGAZINE SPREAD', year: '2026' },
 ];
 
 const row2Projects = [
   ...decorativeProjects.slice(5, 10),
-  { id: '03', src: '/images/graphic-design/graphic-03.jpg', title: 'Creative Harmony Type', category: 'TYPOGRAPHY POSTER', year: '2025' },
-  { id: '04', src: '/images/graphic-design/graphic-04.jpg', title: 'Botanical Echo Identity', category: 'BRAND IDENTITY', year: '2025' },
+  { id: '03', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./3.jpg', title: 'Unfolding Motif 03', category: 'TYPOGRAPHY POSTER', year: '2026' },
+  { id: '04', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./4.jpg', title: 'Unfolding Motif 04', category: 'BRAND IDENTITY', year: '2026' },
 ];
 
 export default function GraphicDesign() {
@@ -86,7 +86,7 @@ export default function GraphicDesign() {
           </h2>
 
           <p className="text-xs sm:text-sm md:text-base text-white/90 font-sans leading-relaxed max-w-2xl mx-auto font-light">
-            Through my love of art, I began exploring new ways of creating and expressing ideas. My work integrates digital tools like Photoshop, Illustrator and InDesign, allowing me to expand my practice into editorial layouts, brand identity, and high contrast print compositions.
+            Through our love of art, we began exploring new ways of creating and expressing ideas. Our work integrates digital tools like Photoshop, Illustrator and InDesign, allowing us to expand our practice into editorial layouts, brand identity, and high contrast print compositions.
           </p>
         </div>
 

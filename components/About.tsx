@@ -26,7 +26,7 @@ export default function About() {
               {/* B&W Portrait Inside Postage Stamp */}
               <div className="relative w-44 h-56 sm:w-48 sm:h-60 overflow-hidden bg-black border border-[#8E0E13]">
                 <Image
-                  src="/images/portraits/about-postage.jpg"
+                  src="/images/CREATIVE/1.jpg"
                   alt="Postage Stamp Portrait"
                   fill
                   sizes="240px"
@@ -70,19 +70,19 @@ export default function About() {
         {/* Right Side: Large Title & Editorial Paragraph */}
         <div className="w-full lg:w-1/2 text-left">
           <h2 className="font-handwriting text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-wide drop-shadow-sm">
-            about me
+            about us
           </h2>
 
 
           <div className="space-y-4 text-sm sm:text-base text-white/90 leading-relaxed font-sans font-normal max-w-lg">
             <p>
-              I’m a multidisciplinary designer and visual artist who loves turning complex ideas into emotionally resonant visual stories.
+              We are a team of multidisciplinary designers and visual artists who love turning complex ideas into emotionally resonant visual stories.
             </p>
             <p>
-              My work moves seamlessly between graphic design, digital experiences, visual identity, and editorial art direction.
+              Our work moves seamlessly between graphic design, digital experiences, visual identity, and editorial art direction.
             </p>
             <p>
-              I’m deeply interested in creating work that feels personal, expressive, and unforgettable — blending tactile paper textures with high-contrast analog photography.
+              We’re deeply interested in creating work that feels personal, expressive, and unforgettable — blending tactile paper textures with high-contrast analog photography.
             </p>
           </div>
 

@@ -27,7 +27,7 @@ const softSkills = [
   'Contribute creative ideas and perspectives',
   'Active team discussion & collaboration',
   'Developing innovative solutions to problem solving and overall team productivity',
-  'Effective communicator demonstrated through my experience',
+  'Effective communicator demonstrated through our experience',
   'Artistic and design intuition honed through visual practice',
 ];
 
@@ -104,7 +104,7 @@ export default function Skills() {
             Skills
           </h3>
           <p className="font-handwriting text-xl sm:text-2xl text-[#6F6862] select-none">
-            my abilities
+            our abilities
           </p>
 
           <div className="mt-4 pt-3 border-t border-[#8E0E13]/20 text-[10px] font-mono text-[#8E0E13] font-bold tracking-widest uppercase animate-pulse select-none">
@@ -161,7 +161,7 @@ export default function Skills() {
                     <Tape className="-top-3 left-4" variant="cream" rotate="rotate-[-5deg]" />
                     <div className="relative aspect-[3/4] w-full bg-black overflow-hidden border border-black/40">
                       <Image
-                        src="/images/portraits/portrait-02.jpg"
+                        src="/images/CREATIVE/2.jpg"
                         alt="Photo Scrap"
                         fill
                         sizes="200px"
@@ -237,7 +237,7 @@ export default function Skills() {
                   </div>
                   <Tape className="-top-3 right-6" variant="red" rotate="rotate-[3deg]" />
                   <h3 className="font-handwriting text-4xl font-bold text-[#8E0E13] mb-4">
-                    my experience
+                    our experience
                   </h3>
                   <div className="space-y-4">
                     {experiences.map((exp, index) => (
@@ -268,7 +268,7 @@ export default function Skills() {
                     <Tape className="-top-3 left-1/2 transform -translate-x-1/2 w-20" variant="dark" rotate="rotate-[-2deg]" />
                     <div className="relative aspect-[3/4] w-full bg-black overflow-hidden">
                       <Image
-                        src="/images/portraits/portrait-04.jpg"
+                        src="/images/Social Media Intern/1.jpg"
                         alt="Photo"
                         fill
                         sizes="160px"
@@ -322,7 +322,7 @@ export default function Skills() {
                 {/* Mobile Experience */}
                 <div className="bg-[#F3EEE7] text-[#201C1B] p-5 rounded-xs shadow-xl border border-[#D8D8D6] w-full max-w-sm">
                   <h3 className="font-handwriting text-3xl font-bold text-[#8E0E13] mb-3">
-                    my experience
+                    our experience
                   </h3>
                   <div className="space-y-3">
                     {experiences.map((exp, index) => (

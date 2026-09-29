@@ -27,3 +27,5 @@ next-env.d.ts
 # OS files
 .DS_Store
 Thumbs.db
+*.MP4
+*.MOV

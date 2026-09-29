@@ -3,12 +3,12 @@
 import Image from 'next/image';
 
 const portraitList = [
-  { src: '/images/portraits/hero-black-white.jpg', id: '01', caption: 'PORTFOLIO — 01' },
-  { src: '/images/portraits/portrait-02.jpg', id: '02', caption: 'PORTFOLIO — 02' },
-  { src: '/images/portraits/portrait-03.jpg', id: '03', caption: 'PORTFOLIO — 03' },
-  { src: '/images/portraits/portrait-04.jpg', id: '04', caption: 'PORTFOLIO — 04' },
-  { src: '/images/portraits/portrait-05.jpg', id: '05', caption: 'PORTFOLIO — 05' },
-  { src: '/images/portraits/about-postage.jpg', id: '06', caption: 'PORTFOLIO — 06' },
+  { src: '/images/STORIES BEHAD/2.jpg', id: '01', caption: 'PORTFOLIO — 01' },
+  { src: '/images/STORIES BEHAD/1.jpg', id: '02', caption: 'PORTFOLIO — 02' },
+  { src: '/images/STORIES BEHAD/4.jpg', id: '03', caption: 'PORTFOLIO — 03' },
+  { src: '/images/STORIES BEHAD/3.jpg', id: '04', caption: 'PORTFOLIO — 04' },
+  { src: '/images/STORIES BEHAD/6.jpg', id: '05', caption: 'PORTFOLIO — 05' },
+  { src: '/images/STORIES BEHAD/5.jpg', id: '06', caption: 'PORTFOLIO — 06' },
 ];
 
 export default function FilmStrip() {
@@ -70,17 +70,16 @@ export default function FilmStrip() {
               </div>
 
               {/* B&W Image Frame */}
-              <div className="relative w-full h-[180px] sm:h-[240px] md:h-[290px] overflow-hidden bg-black border border-white/10">
+              <div className="relative w-full h-[180px] sm:h-[240px] md:h-[290px] overflow-hidden border border-white/10">
 
                 <Image
                   src={frame.src}
                   alt={frame.caption}
                   fill
                   sizes="500px"
-                  className="object-cover grayscale contrast-150 brightness-95 opacity-95 hover:opacity-100 transition-opacity duration-300"
+                  className="object-cover opacity-95 hover:opacity-100 transition-opacity duration-300"
                 />
-                {/* Film grain and edge fading */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30 pointer-events-none" />
+
               </div>
 
               {/* Frame bottom number matching screenshot: ► 03A    SAFETY FILM */}

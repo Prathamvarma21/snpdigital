@@ -9,7 +9,7 @@ const socialCampaigns = [
     id: 1,
     brand: '@maison.noir.couture',
     title: 'Luxury Fashion Campaign',
-    image: '/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png',
+    image: '/images/Social Media Intern/1.jpg',
     likes: '14.2k',
     caption: 'ÉCLIPSE Couture Drop — High-contrast monochrome & velvet aesthetics.',
     rotate: 'rotate-[-6deg]',
@@ -18,7 +18,7 @@ const socialCampaigns = [
     id: 2,
     brand: '@botanique.beauty',
     title: 'Beauty & Lifestyle Reel',
-    image: '/images/decorative/Screenshot 2026-09-09 at 3.57.14 PM.png',
+    image: '/images/Social Media Intern/2.jpg',
     likes: '9.8k',
     caption: 'Avant-garde editorial magazine study for summer launch.',
     rotate: 'rotate-[4deg]',
@@ -27,7 +27,7 @@ const socialCampaigns = [
     id: 3,
     brand: '@creative.studio',
     title: 'Creative Art Campaign',
-    image: '/images/decorative/Screenshot 2026-09-09 at 3.57.25 PM.png',
+    image: '/images/STORIES BEHAD/7.jpg',
     likes: '22.5k',
     caption: 'Minimalist Typography Series — Paper collage & botanical study.',
     rotate: 'rotate-[-3deg]',
@@ -36,7 +36,7 @@ const socialCampaigns = [
     id: 4,
     brand: '@harmony.type.mag',
     title: 'Product Branding Feed',
-    image: '/images/decorative/Screenshot 2026-09-09 at 3.58.40 PM.png',
+    image: '/images/STORIES BEHAD/8.jpg',
     likes: '18.1k',
     caption: 'Issue No. 42 Visual Composition print launch preview.',
     rotate: 'rotate-[5deg]',
@@ -81,7 +81,7 @@ export default function SocialMedia() {
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 rounded-full bg-[#8E0E13] p-[1px]">
                     <div className="w-full h-full rounded-full overflow-hidden relative">
-                      <Image src="/images/portraits/hero-black-white.jpg" alt="Profile" fill className="object-cover" />
+                      <Image src="/images/CREATIVE/1.jpg" alt="Profile" fill className="object-cover" />
                     </div>
                   </div>
                   <span className="text-[10px] font-mono font-bold text-[#201C1B] truncate max-w-[110px]">
