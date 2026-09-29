@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 import Tape from './Tape';
 
 const miniPortraits = [
-  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-1.jpg',
-  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-2.jpg',
-  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-3.jpg',
-  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./pick-your-look-4.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-5.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-6.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-7.jpg',
+  '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-8.jpg',
 ];
 
 export default function Hero() {
