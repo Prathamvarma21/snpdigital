@@ -21,7 +21,7 @@ export default function Tape({ className = '', variant = 'cream', rotate = 'rota
         clipPath: 'polygon(0% 15%, 5% 0%, 95% 0%, 100% 15%, 98% 85%, 100% 100%, 5% 100%, 0% 85%)',
       }}
     >
-      <span className="opacity-40 uppercase select-none">TAPE // 35MM</span>
+      <span className="w-16 h-3 inline-block"></span>
     </div>
   );
 }

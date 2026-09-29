@@ -22,10 +22,7 @@ export default function EndSection() {
         <div className="relative bg-[#8E0E13] p-3 rounded-xs shadow-2xl border border-[#6F090D] mb-8 w-full max-w-md rotate-[1deg]">
           <Tape className="-top-3 left-1/2 transform -translate-x-1/2" variant="cream" rotate="rotate-[-2deg]" />
           
-          <div className="flex justify-between items-center text-[8px] font-mono text-white/80 font-bold px-1 mb-2 tracking-widest uppercase">
-            <span>CREATIVE PORTFOLIO</span>
-            <span>• FINIS •</span>
-          </div>
+
 
 
           <div className="grid grid-cols-4 gap-2">
@@ -42,10 +39,7 @@ export default function EndSection() {
             ))}
           </div>
 
-          <div className="flex justify-between items-center text-[7px] font-mono text-white/60 px-1 mt-1.5">
-            <span>► REEL END 36</span>
-            <span>2026 MILANO</span>
-          </div>
+
         </div>
 
         {/* Red Paper Label: "the end" */}

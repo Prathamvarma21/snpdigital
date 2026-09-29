@@ -51,9 +51,7 @@ export default function Hero() {
                 <div key={i} className="w-2.5 h-1.5 bg-[#F3EEE7] rounded-[1px]" />
               ))}
             </div>
-            <span className="text-[8px] font-mono text-white/90 font-bold uppercase tracking-widest">
-              35MM REEL
-            </span>
+
             <div className="flex gap-1">
               {Array.from({ length: 12 }).map((_, i) => (
                 <div key={i} className="w-2.5 h-1.5 bg-[#F3EEE7] rounded-[1px]" />
@@ -83,9 +81,7 @@ export default function Hero() {
                 <div key={i} className="w-2.5 h-1.5 bg-[#F3EEE7] rounded-[1px]" />
               ))}
             </div>
-            <span className="text-[7px] font-mono text-white/70">
-              35MM FILM REEL
-            </span>
+
             <div className="flex gap-1">
               {Array.from({ length: 12 }).map((_, i) => (
                 <div key={i} className="w-2.5 h-1.5 bg-[#F3EEE7] rounded-[1px]" />

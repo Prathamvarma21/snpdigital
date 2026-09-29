@@ -17,11 +17,7 @@ export default function About() {
             <Tape className="-top-3 left-4" variant="cream" rotate="rotate-[3deg]" />
             <div className="postage-stamp-border bg-[#F3EEE7] p-3 shadow-2xl border border-dashed border-[#8E0E13]/30">
               
-              {/* Postage Header */}
-              <div className="flex justify-between items-center text-[8px] font-mono text-[#8E0E13] font-bold uppercase mb-1">
-                <span>REPUBLIQUE ART</span>
-                <span>$0.85</span>
-              </div>
+
 
               {/* B&W Portrait Inside Postage Stamp */}
               <div className="relative w-44 h-56 sm:w-48 sm:h-60 overflow-hidden bg-black border border-[#8E0E13]">
@@ -35,10 +31,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-black/10 mix-blend-overlay pointer-events-none" />
               </div>
 
-              {/* Stamp Caption */}
-              <div className="text-center mt-1 text-[8px] font-mono text-[#201C1B] font-bold tracking-wider">
-                CREATIVE STUDIO • 2026
-              </div>
+
             </div>
 
             {/* Vintage Cancellation Postmark Stamp Overlay */}
@@ -47,12 +40,7 @@ export default function About() {
                 <circle cx="50" cy="50" r="42" strokeDasharray="3 3" />
                 <circle cx="50" cy="50" r="34" />
                 <path d="M 10 50 Q 30 40, 50 50 T 90 50" strokeWidth="1" />
-                <text x="50" y="44" textAnchor="middle" className="text-[7px] font-mono fill-current stroke-none uppercase tracking-widest">
-                  JAIPUR POST
-                </text>
-                <text x="50" y="58" textAnchor="middle" className="text-[8px] font-mono font-bold fill-current stroke-none">
-                  07 SEPT 2026
-                </text>
+
               </svg>
             </div>
           </div>

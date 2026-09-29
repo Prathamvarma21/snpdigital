@@ -62,12 +62,6 @@ export default function FilmStrip() {
               key={`strip-frame-${idx}`}
               className="w-full bg-[#1A1616] p-3 md:p-4 rounded-xs border-2 border-black/90 shadow-2xl relative"
             >
-              {/* Frame top timestamp & brand */}
-              <div className="flex justify-between items-center text-[10px] font-mono text-neutral-400 font-bold px-1 mb-2 uppercase tracking-widest">
-                <span>KODAK TRI-X 400</span>
-                <span>• {frame.frameNumber} •</span>
-                <span>CREATIVE PORTFOLIO</span>
-              </div>
 
               {/* B&W Image Frame */}
               <div className="relative w-full h-[180px] sm:h-[240px] md:h-[290px] overflow-hidden border border-white/10">
@@ -82,11 +76,6 @@ export default function FilmStrip() {
 
               </div>
 
-              {/* Frame bottom number matching screenshot: ► 03A    SAFETY FILM */}
-              <div className="flex justify-between items-center text-[10px] font-mono text-neutral-300 px-1 mt-2 font-semibold tracking-wider">
-                <span>► {frame.frameNumber}</span>
-                <span>SAFETY FILM</span>
-              </div>
             </div>
           ))}
         </div>

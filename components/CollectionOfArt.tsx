@@ -47,13 +47,9 @@ export default function CollectionOfArt() {
             <div className="flex justify-between items-center mb-3 px-2">
               <div className="flex items-center gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-                <span className="text-[9px] font-mono text-white/80 font-bold tracking-widest">
-                  REC • 4K 60FPS
-                </span>
+
               </div>
-              <div className="text-[9px] font-mono text-neutral-400">
-                LUMIX DIGI-VINTAGE
-              </div>
+
             </div>
 
             {/* Camera Screen Displaying Artwork */}
@@ -74,18 +70,10 @@ export default function CollectionOfArt() {
                 <div className="border-r border-b border-white/10" />
                 <div className="border-b border-white/10" />
               </div>
-              {/* Camera LCD HUD Overlay */}
-              <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center text-[8px] font-mono text-white bg-black/60 px-2 py-1 rounded-sm">
-                <span>ART_01.RAW</span>
-                <span>ISO 200 • F/2.8</span>
-                <span>98% BAT</span>
-              </div>
+
             </div>
 
-            {/* Camera Bottom Label */}
-            <div className="mt-3 text-center text-[9px] font-mono text-neutral-400 uppercase tracking-widest">
-              DIGITAL ART JOURNAL VIEW // MILANO 2026
-            </div>
+
           </div>
         </div>
 
@@ -110,9 +98,7 @@ export default function CollectionOfArt() {
       {/* Bottom Horizontal Row of Physical Artwork Prints */}
       <div>
         <div className="flex items-center justify-between mb-4">
-          <h3 className="font-handwriting text-2xl font-bold text-white">
-            physical prints archive
-          </h3>
+
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
