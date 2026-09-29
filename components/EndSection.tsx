@@ -25,18 +25,13 @@ export default function EndSection() {
 
 
 
-          <div className="grid grid-cols-4 gap-2">
-            {endPortraits.map((src, idx) => (
-              <div key={idx} className="relative aspect-[3/4] overflow-hidden border border-white/10">
-                <Image
-                  src={src}
-                  alt={`End portrait ${idx + 1}`}
-                  fill
-                  sizes="150px"
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
+          <div className="flex flex-col items-center justify-center text-[#F3EEE7] py-8">
+            <span className="font-sans text-xs md:text-sm font-bold tracking-widest uppercase mb-2 text-white/80">
+              contact us
+            </span>
+            <span className="font-handwriting text-5xl md:text-6xl font-bold tracking-wider text-white">
+              8208744506
+            </span>
           </div>
 
 
