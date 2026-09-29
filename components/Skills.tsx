@@ -72,7 +72,7 @@ export default function Skills() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="absolute inset-0 w-full h-full pointer-events-none z-10 hidden xl:block"
+              className="absolute inset-0 w-full h-full pointer-events-none z-10 hidden 2xl:block"
               viewBox="0 0 1000 800"
               preserveAspectRatio="none"
             >
@@ -94,8 +94,8 @@ export default function Skills() {
           data-cursor="GO"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.96 }}
-          className={`z-30 cursor-pointer bg-[#F3EEE7] text-[#201C1B] p-6 sm:p-8 rounded-xs shadow-2xl border border-[#D8D8D6] text-center w-full max-w-[280px] xl:max-w-[320px] min-h-[220px] xl:min-h-[250px] flex flex-col items-center justify-center transition-all duration-500 ${
-            isOpen ? 'xl:absolute xl:top-1/2 xl:left-1/2 xl:transform xl:-translate-x-1/2 xl:-translate-y-1/2' : 'relative my-auto'
+          className={`z-30 cursor-pointer bg-[#F3EEE7] text-[#201C1B] p-6 sm:p-8 rounded-xs shadow-2xl border border-[#D8D8D6] text-center w-full max-w-[280px] 2xl:max-w-[320px] min-h-[220px] 2xl:min-h-[250px] flex flex-col items-center justify-center transition-all duration-500 ${
+            isOpen ? '2xl:absolute 2xl:top-1/2 2xl:left-1/2 2xl:transform 2xl:-translate-x-1/2 2xl:-translate-y-1/2' : 'relative my-auto'
           }`}
         >
           <Tape className="-top-4 left-1/2 transform -translate-x-1/2 w-28" variant="dark" rotate="rotate-[0deg]" />
@@ -117,7 +117,7 @@ export default function Skills() {
           {isOpen && (
             <>
               {/* DESKTOP POPOUT LAYOUT (Exact Match for Screenshot 2) */}
-              <div className="hidden xl:block absolute inset-0 pointer-events-auto">
+              <div className="hidden 2xl:block absolute inset-0 pointer-events-auto">
                 
                 {/* A. HARD SKILLS CARD (Top Center) */}
                 <motion.div
@@ -240,19 +240,41 @@ export default function Skills() {
                     our experience
                   </h3>
                   <div className="space-y-4">
-                    {experiences.map((exp, index) => (
-                      <div key={index} className="pb-3 border-b border-[#D8D8D6] last:border-b-0">
-                        <div className="font-sans font-bold text-sm text-[#201C1B]">
-                          {exp.role}
-                        </div>
-                        <div className="text-xs font-mono text-[#8E0E13] font-semibold mt-0.5">
-                          {exp.studio}
-                        </div>
-                        <div className="text-[10px] font-mono text-[#6F6862]">
-                          {exp.period}
-                        </div>
+                    <div className="pb-3 border-b border-[#D8D8D6]">
+                      <div className="font-sans font-bold text-sm text-[#201C1B]">
+                        LOCATION
                       </div>
-                    ))}
+                      <div className="text-xs font-mono text-[#8E0E13] font-semibold mt-0.5">
+                        JAIPUR / REMOTE
+                      </div>
+                    </div>
+                    
+                    <div className="pb-3 border-b border-[#D8D8D6]">
+                      <div className="font-sans font-bold text-sm text-[#201C1B]">
+                        SPECIALTY
+                      </div>
+                      <div className="text-xs font-mono text-[#8E0E13] font-semibold mt-0.5">
+                        SMM, WEBSITE DEVELOPMENT & CREATIVENESS
+                      </div>
+                    </div>
+
+                    <div className="pb-3 border-b border-[#D8D8D6]">
+                      <div className="font-sans font-bold text-sm text-[#201C1B]">
+                        STATUS
+                      </div>
+                      <div className="text-xs font-mono text-[#8E0E13] font-semibold mt-0.5">
+                        AVAILABLE FOR 2026
+                      </div>
+                    </div>
+
+                    <div className="pb-3">
+                      <div className="font-sans font-bold text-sm text-[#201C1B]">
+                        OUR EXPERIENCE
+                      </div>
+                      <div className="text-xs font-mono text-[#8E0E13] font-semibold mt-0.5">
+                        3-5 YEARS
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
 
@@ -280,12 +302,12 @@ export default function Skills() {
 
               </div>
 
-              {/* MOBILE POPOUT FLOW (< 1280px Viewports) */}
+              {/* MOBILE POPOUT FLOW (< 1536px Viewports) */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 30 }}
-                className="xl:hidden flex flex-col items-center gap-6 mt-6 w-full z-20"
+                className="2xl:hidden flex flex-col items-center gap-6 mt-6 w-full z-20"
               >
                 {/* Mobile Hard Skills */}
                 <div className="bg-[#F3EEE7] text-[#201C1B] p-4 rounded-xs shadow-xl border border-[#D8D8D6] w-full max-w-sm text-center">
@@ -325,19 +347,41 @@ export default function Skills() {
                     our experience
                   </h3>
                   <div className="space-y-3">
-                    {experiences.map((exp, index) => (
-                      <div key={index} className="pb-2 border-b border-[#D8D8D6] last:border-b-0">
-                        <div className="font-sans font-bold text-xs text-[#201C1B]">
-                          {exp.role}
-                        </div>
-                        <div className="text-[11px] font-mono text-[#8E0E13] font-semibold">
-                          {exp.studio}
-                        </div>
-                        <div className="text-[10px] font-mono text-[#6F6862]">
-                          {exp.period}
-                        </div>
+                    <div className="pb-2 border-b border-[#D8D8D6]">
+                      <div className="font-sans font-bold text-xs text-[#201C1B]">
+                        LOCATION
                       </div>
-                    ))}
+                      <div className="text-[11px] font-mono text-[#8E0E13] font-semibold">
+                        JAIPUR / REMOTE
+                      </div>
+                    </div>
+                    
+                    <div className="pb-2 border-b border-[#D8D8D6]">
+                      <div className="font-sans font-bold text-xs text-[#201C1B]">
+                        SPECIALTY
+                      </div>
+                      <div className="text-[11px] font-mono text-[#8E0E13] font-semibold">
+                        SMM, WEBSITE DEVELOPMENT & CREATIVENESS
+                      </div>
+                    </div>
+
+                    <div className="pb-2 border-b border-[#D8D8D6]">
+                      <div className="font-sans font-bold text-xs text-[#201C1B]">
+                        STATUS
+                      </div>
+                      <div className="text-[11px] font-mono text-[#8E0E13] font-semibold">
+                        AVAILABLE FOR 2026
+                      </div>
+                    </div>
+
+                    <div className="pb-2">
+                      <div className="font-sans font-bold text-xs text-[#201C1B]">
+                        OUR EXPERIENCE
+                      </div>
+                      <div className="text-[11px] font-mono text-[#8E0E13] font-semibold">
+                        3-5 YEARS
+                      </div>
+                    </div>
                   </div>
                 </div>
               </motion.div>
