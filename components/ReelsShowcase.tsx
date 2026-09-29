@@ -78,7 +78,7 @@ export default function ReelsShowcase() {
         <Tape className="-top-4 right-1/4" variant="red" rotate="rotate-[3deg]" />
         
         {/* Horizontal Scroll Container for Reels */}
-        <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory hide-scrollbar">
+        <div data-lenis-prevent="true" className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory hide-scrollbar">
           {reels.map((reel, idx) => (
             <div 
               key={idx} 
