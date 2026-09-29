@@ -4,11 +4,11 @@ import ScrapbookCard from './ScrapbookCard';
 import Tape from './Tape';
 
 const reels = [
-  { src: '/images/reels/IMG_5150.MP4', title: 'Reel 01' },
-  { src: '/images/reels/IMG_5151.MP4', title: 'Reel 02' },
-  { src: '/images/reels/IMG_5152.MP4', title: 'Reel 03' },
-  { src: '/images/reels/IMG_5153.MP4', title: 'Reel 04' },
-  { src: '/images/reels/IMG_5156.MOV', title: 'Reel 05' },
+  { src: '/images/reels/IMG_5150.mp4', title: 'Reel 01' },
+  { src: '/images/reels/IMG_5151.mp4', title: 'Reel 02' },
+  { src: '/images/reels/IMG_5152.mp4', title: 'Reel 03' },
+  { src: '/images/reels/IMG_5153.mp4', title: 'Reel 04' },
+  { src: '/images/reels/IMG_5156.mov', title: 'Reel 05' },
 ];
 
 export default function ReelsShowcase() {
