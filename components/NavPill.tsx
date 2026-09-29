@@ -59,7 +59,7 @@ export default function NavPill() {
   };
 
   return (
-    <div className="fixed top-6 right-6 z-40 hidden md:flex items-center gap-1.5 bg-[#F3EEE7]/90 backdrop-blur-md px-4 py-2 rounded-full border border-[#8E0E13]/20 shadow-md">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 md:bottom-auto md:left-auto md:translate-x-0 md:top-6 md:right-6 z-50 flex items-center gap-1 md:gap-1.5 bg-[#F3EEE7]/95 backdrop-blur-md px-4 py-2.5 md:py-2 rounded-full border border-[#8E0E13]/20 shadow-xl w-[90vw] md:w-auto overflow-x-auto hide-scrollbar">
       <span className="font-handwriting text-sm font-bold text-[#8E0E13] mr-2 tracking-widest uppercase">
         Portfolio
       </span>
@@ -71,7 +71,7 @@ export default function NavPill() {
             key={item.id}
             onClick={() => handleNavClick(item.id)}
             data-cursor="GO"
-            className={`px-2.5 py-1 text-xs tracking-wider transition-all duration-300 font-sans relative ${
+            className={`shrink-0 px-2.5 py-1 text-[10px] md:text-xs tracking-wider transition-all duration-300 font-sans relative ${
               isActive ? 'text-[#8E0E13] font-bold' : 'text-[#6F6862] hover:text-[#201C1B]'
             }`}
           >
