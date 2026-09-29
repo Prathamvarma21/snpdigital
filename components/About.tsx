@@ -52,7 +52,7 @@ export default function About() {
         {/* Right Side: Large Title & Editorial Paragraph */}
         <div className="w-full lg:w-1/2 text-left">
           <h2 className="font-handwriting text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-wide drop-shadow-sm">
-            about us
+            about
           </h2>
 
 

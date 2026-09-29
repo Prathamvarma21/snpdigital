@@ -72,7 +72,7 @@ export default function Skills() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="absolute inset-0 w-full h-full pointer-events-none z-10 hidden 2xl:block"
+              className="absolute inset-0 w-full h-full pointer-events-none z-10 hidden lg:block"
               viewBox="0 0 1000 800"
               preserveAspectRatio="none"
             >
@@ -94,8 +94,8 @@ export default function Skills() {
           data-cursor="GO"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.96 }}
-          className={`z-30 cursor-pointer bg-[#F3EEE7] text-[#201C1B] p-6 sm:p-8 rounded-xs shadow-2xl border border-[#D8D8D6] text-center w-full max-w-[280px] 2xl:max-w-[320px] min-h-[220px] 2xl:min-h-[250px] flex flex-col items-center justify-center transition-all duration-500 ${
-            isOpen ? '2xl:absolute 2xl:top-1/2 2xl:left-1/2 2xl:transform 2xl:-translate-x-1/2 2xl:-translate-y-1/2' : 'relative my-auto'
+          className={`z-30 cursor-pointer bg-[#F3EEE7] text-[#201C1B] p-6 sm:p-8 rounded-xs shadow-2xl border border-[#D8D8D6] text-center w-full max-w-[280px] lg:max-w-[320px] min-h-[220px] lg:min-h-[250px] flex flex-col items-center justify-center transition-all duration-500 ${
+            isOpen ? 'lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2' : 'relative my-auto'
           }`}
         >
           <Tape className="-top-4 left-1/2 transform -translate-x-1/2 w-28" variant="dark" rotate="rotate-[0deg]" />
@@ -116,8 +116,7 @@ export default function Skills() {
         <AnimatePresence>
           {isOpen && (
             <>
-              {/* DESKTOP POPOUT LAYOUT (Exact Match for Screenshot 2) */}
-              <div className="hidden 2xl:block absolute inset-0 pointer-events-auto">
+              <div className="hidden lg:block absolute inset-0 pointer-events-auto">
                 
                 {/* A. HARD SKILLS CARD (Top Center) */}
                 <motion.div
@@ -125,7 +124,7 @@ export default function Skills() {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.4, y: 50 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
-                  className="absolute top-[3%] left-1/2 transform -translate-x-1/2 bg-[#F3EEE7] text-[#201C1B] p-4 sm:p-5 rounded-xs shadow-2xl rotate-[-1deg] border border-[#D8D8D6] z-20 flex items-center gap-4 min-w-[340px] max-w-[440px]"
+                  className="absolute top-[2%] left-1/2 transform -translate-x-1/2 bg-[#F3EEE7] text-[#201C1B] p-4 sm:p-5 rounded-xs shadow-2xl rotate-[-1deg] border border-[#D8D8D6] z-20 flex items-center gap-4 min-w-[340px] max-w-[440px]"
                 >
                   <Tape className="-top-3 left-6" variant="cream" rotate="rotate-[-3deg]" />
                   <div className="border-r border-[#8E0E13]/20 pr-4">
@@ -197,7 +196,7 @@ export default function Skills() {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.4, y: -50 }}
                   transition={{ duration: 0.5, delay: 0.25 }}
-                  className="absolute bottom-[4%] left-[2%] bg-[#F3EEE7] text-[#201C1B] p-6 rounded-xs shadow-2xl rotate-[-1deg] border border-[#D8D8D6] w-[340px] lg:w-[370px] z-20"
+                  className="absolute bottom-[2%] left-[1%] bg-[#F3EEE7] text-[#201C1B] p-5 lg:p-6 rounded-xs shadow-2xl rotate-[-1deg] border border-[#D8D8D6] w-[280px] lg:w-[350px] z-20"
                 >
                   <div className="flex justify-between items-center border-b-2 border-dashed border-[#8E0E13]/30 pb-3 mb-3">
                     <div className="flex gap-2">
@@ -226,7 +225,7 @@ export default function Skills() {
                   animate={{ opacity: 1, scale: 1, x: 0 }}
                   exit={{ opacity: 0, scale: 0.4, x: -50 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
-                  className="absolute top-[28%] right-[2%] bg-[#F3EEE7] text-[#201C1B] p-6 rounded-xs shadow-2xl rotate-[1.5deg] border border-[#D8D8D6] w-[350px] lg:w-[390px] z-20"
+                  className="absolute top-[25%] right-[1%] bg-[#F3EEE7] text-[#201C1B] p-5 lg:p-6 rounded-xs shadow-2xl rotate-[1.5deg] border border-[#D8D8D6] w-[280px] lg:w-[350px] z-20"
                 >
                   <div className="flex justify-between items-center border-b-2 border-dashed border-[#8E0E13]/30 pb-3 mb-3">
                     <div className="flex gap-2">
@@ -284,7 +283,7 @@ export default function Skills() {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.4, y: -40 }}
                   transition={{ duration: 0.5, delay: 0.35 }}
-                  className="absolute bottom-[4%] right-[32%] z-20 flex items-center gap-2"
+                  className="absolute bottom-[2%] right-[20%] lg:right-[30%] z-20 flex items-center gap-2"
                 >
                   <div className="bg-[#F3EEE7] p-2 pb-5 shadow-2xl border border-[#D8D8D6] w-36 rotate-[6deg]">
                     <Tape className="-top-3 left-1/2 transform -translate-x-1/2 w-20" variant="dark" rotate="rotate-[-2deg]" />
@@ -302,12 +301,11 @@ export default function Skills() {
 
               </div>
 
-              {/* MOBILE POPOUT FLOW (< 1536px Viewports) */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 30 }}
-                className="2xl:hidden flex flex-col items-center gap-6 mt-6 w-full z-20"
+                className="lg:hidden flex flex-col items-center gap-6 mt-6 w-full z-20"
               >
                 {/* Mobile Hard Skills */}
                 <div className="bg-[#F3EEE7] text-[#201C1B] p-4 rounded-xs shadow-xl border border-[#D8D8D6] w-full max-w-sm text-center">

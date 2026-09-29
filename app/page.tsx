@@ -8,7 +8,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import CollectionOfArt from '@/components/CollectionOfArt';
 import ReelsShowcase from '@/components/ReelsShowcase';
-import TableOfContents from '@/components/TableOfContents';
+
 import GraphicDesign from '@/components/GraphicDesign';
 import InfluencerCollabs from '@/components/InfluencerCollabs';
 import EndSection from '@/components/EndSection';
@@ -101,8 +101,7 @@ export default function Home() {
           {/* REELS SHOWCASE */}
           <ReelsShowcase />
 
-          {/* 05 — TABLE OF CONTENTS */}
-          <TableOfContents />
+
 
           {/* 06 — GRAPHIC DESIGN */}
           <GraphicDesign />
