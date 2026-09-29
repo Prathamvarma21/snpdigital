@@ -58,13 +58,7 @@ export default function About() {
           </div>
 
           {/* Transparent / Outlined Note Paper */}
-          <div className="relative bg-[#F3EEE7]/10 backdrop-blur-xs p-5 rounded-xs border border-white/20 text-white font-handwriting rotate-[2deg] max-w-xs">
-            <p className="text-xl leading-snug">
 
-              "Every design should feel like a piece of personal history — caught somewhere between analog warmth & visual precision."
-            </p>
-            <span className="block text-right text-lg text-white/90 font-bold mt-2">— Creative Director</span>
-          </div>
         </div>
 
         {/* Right Side: Large Title & Editorial Paragraph */}
