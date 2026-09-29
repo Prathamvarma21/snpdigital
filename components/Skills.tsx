@@ -72,7 +72,7 @@ export default function Skills() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="absolute inset-0 w-full h-full pointer-events-none z-10 hidden md:block"
+              className="absolute inset-0 w-full h-full pointer-events-none z-10 hidden xl:block"
               viewBox="0 0 1000 800"
               preserveAspectRatio="none"
             >
@@ -94,8 +94,8 @@ export default function Skills() {
           data-cursor="GO"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.96 }}
-          className={`z-30 cursor-pointer bg-[#F3EEE7] text-[#201C1B] p-6 sm:p-8 rounded-xs shadow-2xl border border-[#D8D8D6] text-center w-full max-w-[280px] sm:max-w-[320px] min-h-[220px] sm:min-h-[250px] flex flex-col items-center justify-center transition-all duration-500 ${
-            isOpen ? 'md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2' : 'relative my-auto'
+          className={`z-30 cursor-pointer bg-[#F3EEE7] text-[#201C1B] p-6 sm:p-8 rounded-xs shadow-2xl border border-[#D8D8D6] text-center w-full max-w-[280px] xl:max-w-[320px] min-h-[220px] xl:min-h-[250px] flex flex-col items-center justify-center transition-all duration-500 ${
+            isOpen ? 'xl:absolute xl:top-1/2 xl:left-1/2 xl:transform xl:-translate-x-1/2 xl:-translate-y-1/2' : 'relative my-auto'
           }`}
         >
           <Tape className="-top-4 left-1/2 transform -translate-x-1/2 w-28" variant="dark" rotate="rotate-[0deg]" />
@@ -117,7 +117,7 @@ export default function Skills() {
           {isOpen && (
             <>
               {/* DESKTOP POPOUT LAYOUT (Exact Match for Screenshot 2) */}
-              <div className="hidden md:block absolute inset-0 pointer-events-auto">
+              <div className="hidden xl:block absolute inset-0 pointer-events-auto">
                 
                 {/* A. HARD SKILLS CARD (Top Center) */}
                 <motion.div
@@ -280,12 +280,12 @@ export default function Skills() {
 
               </div>
 
-              {/* MOBILE POPOUT FLOW (< 768px Viewports) */}
+              {/* MOBILE POPOUT FLOW (< 1280px Viewports) */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 30 }}
-                className="md:hidden flex flex-col items-center gap-6 mt-6 w-full z-20"
+                className="xl:hidden flex flex-col items-center gap-6 mt-6 w-full z-20"
               >
                 {/* Mobile Hard Skills */}
                 <div className="bg-[#F3EEE7] text-[#201C1B] p-4 rounded-xs shadow-xl border border-[#D8D8D6] w-full max-w-sm text-center">
