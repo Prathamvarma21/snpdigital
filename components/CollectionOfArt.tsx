@@ -98,9 +98,7 @@ export default function CollectionOfArt() {
             An ongoing gallery of visual stories, color experiments, digital portraiture, and fine art photography. Each artwork represents an unfiltered glimpse into our creative thought process — created without client parameters, driven purely by intuition and artistic curiosity.
           </p>
           <div className="pt-4 flex items-center gap-4">
-            <span className="bg-white/15 text-white text-xs font-mono px-3 py-1.5 rounded-full border border-white/20">
-              10 PHYSICAL PRINTS
-            </span>
+
             <span className="text-xs font-handwriting text-white/80 text-lg">
               click any print to enlarge ↑
             </span>

@@ -12,15 +12,15 @@ if (typeof window !== 'undefined') {
 
 const decorativeProjects = [
   { id: 'dec-01', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.01 PM.png', title: 'ÉCLIPSE Design System', category: 'BRANDING & IDENTITY', year: '2026' },
-  { id: 'dec-02', src: '/images/STORIES BEHAD/2.jpg', title: 'Editorial Spread Layout', category: 'EDITORIAL DESIGN', year: '2026' },
+  { id: 'dec-02', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.14 PM.png', title: 'Editorial Spread Layout', category: 'EDITORIAL DESIGN', year: '2026' },
   { id: 'dec-03', src: '/images/decorative/Screenshot 2026-09-09 at 3.57.25 PM.png', title: 'Minimalist Poster Series', category: 'TYPOGRAPHY POSTER', year: '2026' },
-  { id: 'dec-04', src: '/images/STORIES BEHAD/4.jpg', title: 'Visual Composition Vol. 1', category: 'GRAPHIC ART', year: '2026' },
+  { id: 'dec-04', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.40 PM.png', title: 'Visual Composition Vol. 1', category: 'GRAPHIC ART', year: '2026' },
   { id: 'dec-05', src: '/images/decorative/Screenshot 2026-09-09 at 3.58.48 PM.png', title: 'Abstract Graphic Studies', category: 'EXPERIMENTAL DESIGN', year: '2026' },
   { id: 'dec-06', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./2.jpg', title: 'Monochrome Layout Art', category: 'EDITORIAL SPREAD', year: '2026' },
   { id: 'dec-07', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.09 PM.png', title: 'Creative Brand Framework', category: 'BRAND IDENTITY', year: '2026' },
   { id: 'dec-08', src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./4.jpg', title: 'Geometric Poster Concept', category: 'PRINT & POSTER', year: '2026' },
   { id: 'dec-09', src: '/images/decorative/Screenshot 2026-09-09 at 3.59.50 PM.png', title: 'Vibrant Visual Experiment', category: 'DIGITAL ART', year: '2026' },
-  { id: 'dec-10', src: '/images/CREATIVE/2.jpg', title: 'Modern Fashion Graphics', category: 'FASHION POSTER', year: '2026' },
+  { id: 'dec-10', src: '/images/decorative/Screenshot 2026-09-09 at 4.00.03 PM.png', title: 'Modern Fashion Graphics', category: 'FASHION POSTER', year: '2026' },
 ];
 
 const row1Projects = [

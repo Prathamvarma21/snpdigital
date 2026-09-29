@@ -48,7 +48,7 @@ export default function About() {
                 <circle cx="50" cy="50" r="34" />
                 <path d="M 10 50 Q 30 40, 50 50 T 90 50" strokeWidth="1" />
                 <text x="50" y="44" textAnchor="middle" className="text-[7px] font-mono fill-current stroke-none uppercase tracking-widest">
-                  MILANO POST
+                  JAIPUR POST
                 </text>
                 <text x="50" y="58" textAnchor="middle" className="text-[8px] font-mono font-bold fill-current stroke-none">
                   07 SEPT 2026
@@ -88,8 +88,8 @@ export default function About() {
 
           {/* Hand-drawn underline symbol & metadata */}
           <div className="mt-8 pt-6 border-t border-white/20 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-white/80">
-            <div>LOCATION: MILANO / REMOTE</div>
-            <div>SPECIALTY: VISUAL DIRECTION</div>
+            <div>LOCATION: JAIPUR / REMOTE</div>
+            <div>SPECIALTY: SMM, WEBSITE DEVELOPMENT & CREATIVENESS</div>
             <div>STATUS: AVAILABLE FOR 2026</div>
           </div>
         </div>

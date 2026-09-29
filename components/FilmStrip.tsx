@@ -3,12 +3,12 @@
 import Image from 'next/image';
 
 const portraitList = [
-  { src: '/images/STORIES BEHAD/2.jpg', id: '01', caption: 'PORTFOLIO — 01' },
-  { src: '/images/STORIES BEHAD/1.jpg', id: '02', caption: 'PORTFOLIO — 02' },
-  { src: '/images/STORIES BEHAD/4.jpg', id: '03', caption: 'PORTFOLIO — 03' },
-  { src: '/images/STORIES BEHAD/3.jpg', id: '04', caption: 'PORTFOLIO — 04' },
-  { src: '/images/STORIES BEHAD/6.jpg', id: '05', caption: 'PORTFOLIO — 05' },
-  { src: '/images/STORIES BEHAD/5.jpg', id: '06', caption: 'PORTFOLIO — 06' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-1.jpg', id: '01', caption: 'NATUREVERSE — 01' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-2.jpg', id: '02', caption: 'NATUREVERSE — 02' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-3.jpg', id: '03', caption: 'NATUREVERSE — 03' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-4.jpg', id: '04', caption: 'NATUREVERSE — 04' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-5.jpg', id: '05', caption: 'NATUREVERSE — 05' },
+  { src: '/images/“UNFOLDING THIS MOTIF FROM COLLECTION./natureverse-6.jpg', id: '06', caption: 'NATUREVERSE — 06' },
 ];
 
 export default function FilmStrip() {
