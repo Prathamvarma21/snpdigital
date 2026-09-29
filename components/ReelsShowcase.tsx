@@ -1,7 +1,57 @@
 'use client';
 
+import { useRef, useState } from 'react';
 import ScrapbookCard from './ScrapbookCard';
 import Tape from './Tape';
+import { Play } from 'lucide-react';
+
+const ReelVideo = ({ src }: { src: string }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handleTogglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  return (
+    <div 
+      className="relative w-full h-full cursor-pointer group"
+      onMouseEnter={() => {
+        videoRef.current?.play();
+        setIsPlaying(true);
+      }}
+      onMouseLeave={() => {
+        videoRef.current?.pause();
+        setIsPlaying(false);
+      }}
+      onClick={handleTogglePlay}
+    >
+      <video
+        ref={videoRef}
+        src={src}
+        className="w-full h-full object-cover"
+        loop
+        muted
+        playsInline
+        preload="metadata"
+      />
+      {/* Play Button Overlay - fades out when playing */}
+      <div className={`absolute inset-0 flex items-center justify-center bg-black/20 transition-opacity duration-300 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
+        <div className="bg-white/20 backdrop-blur-md p-3 rounded-full text-white/90">
+          <Play className="w-8 h-8 fill-current" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const reels = [
   { src: '/images/reels/IMG_5150.mp4', title: 'Reel 01' },
@@ -36,14 +86,7 @@ export default function ReelsShowcase() {
             >
               {/* Phone Mockup Frame */}
               <div className="relative w-full aspect-[9/16] bg-black rounded-sm overflow-hidden border-2 border-black/80 shadow-inner">
-                <video
-                  src={reel.src}
-                  className="w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                />
+                <ReelVideo src={reel.src} />
               </div>
               <div className="mt-3 flex justify-between items-center px-1">
                 <span className="font-handwriting text-xl text-white">{reel.title}</span>
@@ -53,8 +96,8 @@ export default function ReelsShowcase() {
           ))}
         </div>
         
-        <div className="text-center mt-2 text-[#8E0E13] font-handwriting text-xl animate-pulse">
-          swipe to view more →
+        <div className="text-center mt-2 text-[#8E0E13] font-handwriting text-xl">
+          hover or tap to play • swipe for more →
         </div>
       </div>
 
