@@ -104,9 +104,6 @@ export default function Hero() {
 
           {/* Hand-drawn scribble arrow pointing down */}
           <div className="flex flex-col items-center text-[#8E0E13]">
-            <span className="font-handwriting text-lg font-bold">
-              click here to scroll down ↓
-            </span>
             <svg viewBox="0 0 100 40" className="w-24 h-8 fill-none stroke-current stroke-[2]">
               <path d="M 10 10 Q 50 35, 90 10 M 80 20 L 90 10 L 85 2" />
             </svg>
@@ -116,13 +113,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Scroll Down Indicator */}
-      <motion.div
-        animate={{ y: [0, 6, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-        className="z-20 mt-8 text-center text-[#8E0E13] font-handwriting text-2xl font-bold"
-      >
-        scroll to explore ↓
-      </motion.div>
+
     </section>
   );
 }
