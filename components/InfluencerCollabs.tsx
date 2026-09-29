@@ -6,9 +6,16 @@ import ScrapbookCard from './ScrapbookCard';
 import { Expand } from 'lucide-react';
 
 const collabsImages = [
-  '/images/banners/diwali.jpg',
-  '/images/banners/navaratri.jpg',
-  '/images/banners/ganesh.jpg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.09.56 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.10.12 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.10.44 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.11.17 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.11.41 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.15.17 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.21.15 PM (1).jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.21.15 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.21.22 PM.jpeg',
+  '/images/instagram collabs/WhatsApp Image 2026-09-29 at 12.21.23 PM.jpeg',
 ];
 
 export default function InfluencerCollabs() {
@@ -87,7 +94,7 @@ export default function InfluencerCollabs() {
           {collabsImages.map((src, idx) => (
             <div 
               key={idx} 
-              className="relative shrink-0 w-[280px] md:w-[500px] lg:w-[600px] aspect-[2/1] bg-neutral-900 rounded-sm cursor-pointer snap-center transition-all duration-300 ease-out group"
+              className="relative shrink-0 w-[180px] md:w-[240px] aspect-[4/5] bg-neutral-900 rounded-sm cursor-pointer snap-center transition-all duration-300 ease-out group"
               style={{ transition: 'transform 0.1s linear, filter 0.3s' }}
               onClick={() => setActiveItem(idx === activeItem ? null : idx)}
             >
@@ -95,8 +102,8 @@ export default function InfluencerCollabs() {
                 src={src}
                 alt={`Collab ${idx + 1}`}
                 fill
-                sizes="(max-width: 768px) 100vw, 600px"
-                className="object-cover object-center rounded-sm"
+                sizes="(max-width: 768px) 100vw, 400px"
+                className="object-cover object-bottom rounded-sm"
               />
               
               {/* Expand Icon Overlay (like the reference image) */}
