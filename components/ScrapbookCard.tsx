@@ -5,7 +5,7 @@ import Tape from './Tape';
 
 interface ScrapbookCardProps {
   children: React.ReactNode;
-  variant?: 'cream' | 'red';
+  variant?: 'cream' | 'red' | 'dark';
   rotate?: string;
   className?: string;
   id?: string;
@@ -20,10 +20,9 @@ export default function ScrapbookCard({
   id,
   hasTape = true,
 }: ScrapbookCardProps) {
-  const bgClass =
-    variant === 'red'
-      ? 'bg-[#5C070B] text-white border-[#3A0406]'
-      : 'bg-[#F3EEE7] text-[#201C1B] border-[#D8D8D6]';
+  let bgClass = 'bg-[#F3EEE7] text-[#201C1B] border-[#D8D8D6]';
+  if (variant === 'red') bgClass = 'bg-[#5C070B] text-white border-[#3A0406]';
+  if (variant === 'dark') bgClass = 'bg-[#1A1616] text-[#F3EEE7] border-[#0F0D0D]';
 
   return (
     <section
@@ -31,7 +30,7 @@ export default function ScrapbookCard({
       className={`relative mx-auto w-[92vw] max-w-[1150px] my-12 md:my-20 p-6 md:p-12 rounded-xs border shadow-2xl transition-transform duration-700 hover:rotate-0 ${bgClass} ${rotate} ${className}`}
       style={{
         boxShadow:
-          variant === 'red'
+          variant === 'red' || variant === 'dark'
             ? '0 30px 60px -12px rgba(0, 0, 0, 0.6), 0 12px 24px rgba(0, 0, 0, 0.4)'
             : '0 30px 60px -12px rgba(0, 0, 0, 0.45), 0 12px 24px rgba(0, 0, 0, 0.25)',
       }}
@@ -40,8 +39,8 @@ export default function ScrapbookCard({
       {/* Optional decorative corner tape */}
       {hasTape && (
         <>
-          <Tape className="-top-3 -left-3" variant={variant === 'red' ? 'cream' : 'red'} rotate="rotate-[-6deg]" />
-          <Tape className="-top-3 -right-3" variant={variant === 'red' ? 'cream' : 'red'} rotate="rotate-[5deg]" />
+          <Tape className="-top-3 -left-3" variant={variant === 'red' || variant === 'dark' ? 'cream' : 'red'} rotate="rotate-[-6deg]" />
+          <Tape className="-top-3 -right-3" variant={variant === 'red' || variant === 'dark' ? 'cream' : 'red'} rotate="rotate-[5deg]" />
         </>
       )}
 
