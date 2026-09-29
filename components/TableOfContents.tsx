@@ -35,9 +35,7 @@ export default function TableOfContents() {
       
       {/* Top Header: Small Artwork Collection Thumbnails */}
       <div className="flex justify-between items-center gap-3 mb-8 overflow-x-auto pb-2 border-b border-[#D8D8D6]">
-        <span className="text-xs font-mono text-[#8E0E13] font-bold uppercase tracking-widest shrink-0">
-          INDEX THUMBNAILS:
-        </span>
+
         <div className="flex gap-3">
           {miniThumbs.map((src, i) => (
             <div key={i} className="relative w-16 h-16 bg-neutral-900 border border-[#8E0E13]/30 rounded-xs shadow-sm overflow-hidden shrink-0">

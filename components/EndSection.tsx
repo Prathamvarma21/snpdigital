@@ -64,7 +64,7 @@ export default function EndSection() {
 
         {/* Footer copyright */}
         <div className="mt-12 text-[10px] font-mono text-[#6F6862] tracking-widest uppercase">
-          © 2026 CREATIVE PORTFOLIO • ALL RIGHTS RESERVED • MILANO, ITALY
+          © 2026 CREATIVE PORTFOLIO • ALL RIGHTS RESERVED • Jaipur,Rajasthan
         </div>
 
       </div>

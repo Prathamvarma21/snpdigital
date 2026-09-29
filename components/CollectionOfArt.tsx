@@ -113,9 +113,6 @@ export default function CollectionOfArt() {
           <h3 className="font-handwriting text-2xl font-bold text-white">
             physical prints archive
           </h3>
-          <span className="text-xs font-mono text-white/60">
-            01 — 10 ARTWORKS
-          </span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

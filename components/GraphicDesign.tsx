@@ -136,9 +136,7 @@ export default function GraphicDesign() {
         </div>
 
         {/* Scroll Instruction Hint */}
-        <div className="mt-6 text-center text-xs font-mono text-white/70 tracking-widest uppercase z-20">
-          ↔ KEEP SCROLLING — IMAGE ROWS SLIDE IN OPPOSITE DIRECTIONS
-        </div>
+
 
         {/* 3. DECORATIVE DESIGN GALLERY GRID (ALL 10 DESIGNS) */}
         <div className="w-full max-w-6xl mx-auto mt-16 px-4 z-20">
@@ -146,9 +144,7 @@ export default function GraphicDesign() {
             <h3 className="font-handwriting text-3xl sm:text-4xl font-bold tracking-wide">
               decorative design gallery
             </h3>
-            <span className="text-xs font-mono text-white/80 uppercase tracking-widest mt-2 sm:mt-0">
-              10 SELECTED WORKS • CLICK TO ENLARGE
-            </span>
+
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
